@@ -5,10 +5,15 @@
 
 @import "compass/reset";
 
+@import "compass/css3/text-shadow";
+
 $first-color: #ea7371;
 $second-color: #ffc1b3;
 $third-color: #88b3cf;
 $fourth-color: #2d5f73;
+
+$text-color: #ffe8f0;
+$shadow-color: #802222;
 
 body {
   margin: 0;
@@ -22,6 +27,11 @@ body {
     position: relative;
     top: 10%;
     left: 10%;
+
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: $text-color;
+    @include text-shadow($shadow-color 2px 2px 0);
   }
 
   &:nth-child(4n+1) {
