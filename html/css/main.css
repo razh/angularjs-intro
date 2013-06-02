@@ -4,8 +4,10 @@ body {
 .slide {
   width: 100%;
   height: 100%; }
-  .slide:before {
-    content: attr(data-caption); }
+  .slide .caption {
+    position: relative;
+    top: 10%;
+    left: 10%; }
   .slide:nth-child(4n+1) {
     background: #ea7371; }
   .slide:nth-child(4n+2) {
