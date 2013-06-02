@@ -35,41 +35,32 @@ This guide emphasizes readability over vocabulary and diagrams over paragraphs o
 
 \section{\texttt{\$scope}}
 
-\tikzset{
-  every node/.style={inner sep=15pt}
-}
+\begin{center}
+  \begin{tabular}{cc}
+    \toprule
+      \textbf{scope} & \textbf{property}\tabularnewline
+    \midrule
+      root           & value \tabularnewline
+      child          & test  \tabularnewline
+      sibling        & id    \tabularnewline
+    \bottomrule
+  \end{tabular}
+\end{center}
 
-\tikzstyle{split}=[draw, fill=white, rectangle split, rounded corners, drop shadow]
-\begin{tikzpicture}
-  \node (rootScope) [split] {
-    \texttt{\large \$rootScope}
-    \nodepart{two} {\texttt{\$scope.test}}
-  };
-\end{tikzpicture}
+\begin{center}
+  \begin{tikzpicture}
 
-\tikzset {
-  every two node part/.style={black},
-}
+  \end{tikzpicture}
+\end{center}
 
-\tikzstyle{split}=[draw, text=white, rectangle split, rectangle split part fill={black, white}, rounded corners]
-\begin{tikzpicture}
-  \node (rootScope) [split] {
-    \texttt{\large \$rootScope}
-    \nodepart{two} {\texttt{\$scope.test}}
-    \nodepart{three} {\texttt{\$scope.test}}
-    \nodepart{four} {\texttt{\$scope.test}}
-  };
-\end{tikzpicture}
-\\\\
-\begin{tabular}{cc}
-  \toprule
-    \textbf{scope} & \textbf{property}\tabularnewline
-  \midrule
-    root           & value \tabularnewline
-    child          & test  \tabularnewline
-    sibling        & id    \tabularnewline
-  \bottomrule
-\end{tabular}
+Possible topics of discussion.
+
+\begin{itemize}
+  \item scopes.
+  \item Routing with ngViews.
+  \item ngInclude.
+
+\end{itemize}
 
 
 \end{document}
