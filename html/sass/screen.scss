@@ -5,15 +5,22 @@
 
 @import "compass/reset";
 
-@import "compass/css3/text-shadow";
+@import "compass/css3/";
+
+* {
+  @include box-sizing(border-box)
+}
 
 $first-color: #ea7371;
 $second-color: #ffc1b3;
 $third-color: #88b3cf;
 $fourth-color: #2d5f73;
 
-$text-color: #ffe8f0;
-$shadow-color: #802222;
+$text-color: #fff8f8;
+$shadow-color: rgba(100, 100, 100, 0.2);
+
+$spacing: 40px;
+$content-width: 60%;
 
 body {
   margin: 0;
@@ -25,13 +32,29 @@ body {
 
   .caption {
     position: relative;
-    top: 10%;
+    top: 2 * $spacing;
     left: 10%;
 
     font-family: Georgia, serif;
     font-size: 3rem;
     color: $text-color;
-    @include text-shadow($shadow-color 2px 2px 0);
+    @include text-shadow($shadow-color 3px 3px 0);
+  }
+
+  .content {
+    position: relative;
+    top: 4 * $spacing;
+    left: 50%;
+
+    margin-left: -0.5 * $content-width;
+
+    width: $content-width;
+    height: $content-width;
+    padding: 10%;
+
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
   }
 
   &:nth-child(4n+1) {

@@ -67,39 +67,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 25, ../sass/screen.scss */
 body {
   margin: 0;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .slide {
   width: 100%;
   height: 100%;
 }
-/* line 26, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .slide .caption {
   position: relative;
-  top: 10%;
+  top: 80px;
   left: 10%;
   font-family: Georgia, serif;
   font-size: 3rem;
-  color: #ffe8f0;
-  text-shadow: #802222 2px 2px 0;
+  color: #fff8f8;
+  text-shadow: rgba(100, 100, 100, 0.2) 3px 3px 0;
 }
-/* line 37, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
+.slide .content {
+  position: relative;
+  top: 160px;
+  left: 50%;
+  margin-left: -30%;
+  width: 60%;
+  height: 60%;
+  padding: 10%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/* line 60, ../sass/screen.scss */
 .slide:nth-child(4n+1) {
   background: #ea7371;
 }
-/* line 41, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .slide:nth-child(4n+2) {
   background: #ffc1b3;
 }
-/* line 45, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .slide:nth-child(4n+3) {
   background: #88b3cf;
 }
-/* line 49, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .slide:nth-child(4n+4) {
   background: #2d5f73;
 }
