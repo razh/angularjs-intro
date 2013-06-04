@@ -3,48 +3,55 @@
 
   var $slides = $( '.slide' );
 
-  $slides.each(function() {
-    console.log( $( this ) );
-  });
+  var prevSlideIndex = 0,
+      currSlideIndex = 0,
+      nextSlideIndex = 0;
 
-  var currSlideIndex = 0;
-  var length = $slides.length;
-
-  var isAnimating = [ true ];
+  var prevSlide = $slides[ prevSlideIndex ],
+      currSlide = $slides[ currSlideIndex ],
+      nextSlide = $slides[ nextSlideIndex ];
 
   $( document ).scroll(function() {
     var slideIndex = Math.max( 0, Math.floor( window.pageYOffset / window.innerHeight ) );
 
     if ( slideIndex !== currSlideIndex ) {
-      currSlideIndex = slideIndex;
-
-      var prevSlideIndex = slideIndex - 1;
-      if ( prevSlideIndex >= 0 ) {
-        var prevSlide = $slides[ prevSlideIndex ];
+      // Pause slides that are no longer visible.
+      if ( slideIndex < currSlideIndex ) {
+        pause( $( nextSlide ) );
+      } else {
+        pause( $( prevSlide ) );
       }
 
-      var nextSlideIndex = slideIndex + 1;
+      currSlideIndex = slideIndex;
+      currSlide = $slides[ currSlideIndex ];
+
+      prevSlideIndex = slideIndex - 1;
+      if ( prevSlideIndex >= 0 ) {
+        prevSlide = $slides[ prevSlideIndex ];
+        play( $( prevSlide ) );
+      }
+
+      nextSlideIndex = slideIndex + 1;
       if ( nextSlideIndex < $slides.length ) {
-        var nextSlide = $slides[ nextSlideIndex ];
+        nextSlide = $slides[ nextSlideIndex ];
+        play( $( nextSlide ) );
       }
     }
   });
 
-  var ticking = false;
-
-  function tick() {
-    if ( !ticking ) {
-      window.requestAnimationFrame( update );
-      ticking = true;
-    }
+  function setAnimationState( $element, state ) {
+    $element.css({
+      '-webkit-animation-play-state': state,
+      'animation-play-state': state
+    });
   }
 
-  function update() {
-    isAnimating.forEach(function( element, index ) {
-      if ( element ) {
-        $slides[ index ];
-      }
-    });
+  function play( $element ) {
+    setAnimationState( $element, 'running' );
+  }
+
+  function pause( $element ) {
+    setAnimationState( $element, 'paused' );
   }
 
 }) ( window.jQuery );
