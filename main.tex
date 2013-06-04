@@ -1,40 +1,66 @@
 \documentclass[12pt]{article}
 
-\title{A simple introduction to \textsc{AngularJS}}
+\title{A simple introduction to \textsc{AngularJS}\date{}}
 \author{Raymond Zhou}
+
+\usepackage{booktabs}
+\usepackage{helvet}
 
 \usepackage{pgfplots}
 \usepackage{tikz}
 \pgfplotsset{compat=newest}
+\usetikzlibrary{automata, shapes, shadows}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
 \setlength{\headheight}{15pt}
 
+% Begin document.
 \begin{document}
 
+% Set up header and footer,
 \fancyhf{}
 \fancyhead[C]{$\hfill$A simple introduction to \textsc{AngularJS}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{0.4pt}  % same width as the header line
 
 \maketitle{}
-\date{}
 
 \section{Introduction}
 
-The \textsc{AngularJS} documentation is notorious for its lack of readability. \textsc{AngularJS} forces you to approach client-side web development in a radically different way from jQuery.
+\textsc{AngularJS} approaches client-side web development in a radically different way from jQuery.
+\\\\
+This guide emphasizes readability over vocabulary and diagrams over paragraphs of technical detail to illustrate the mechanics of \textsc{AngularJS}.
 
-This guide emphasizes readability over vocabulary, and illustrations to depict complex
+\section{\texttt{\$scope}}
 
+\begin{center}
+  \begin{tabular}{cc}
+    \toprule
+      \textbf{scope} & \textbf{property}\tabularnewline
+    \midrule
+      root           & value \tabularnewline
+      child          & test  \tabularnewline
+      sibling        & id    \tabularnewline
+    \bottomrule
+  \end{tabular}
+\end{center}
 
-\newpage{}
+\begin{center}
+  \begin{tikzpicture}
 
-Empty.
+  \end{tikzpicture}
+\end{center}
 
-\newpage{}
+Possible topics of discussion.
 
-Empty.
+\begin{itemize}
+  \item scopes.
+  \item Routing with ngViews.
+  \item ngInclude.
+
+\end{itemize}
+
 
 \end{document}
