@@ -7,6 +7,22 @@
 
 @import "compass/css3/";
 
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+   -khtml-animation: #{$animation};
+     -moz-animation: #{$animation};
+      -ms-animation: #{$animation};
+       -o-animation: #{$animation};
+          animation: #{$animation};
+}
+
 * {
   @include box-sizing(border-box)
 }
@@ -72,12 +88,7 @@ body {
   }
 }
 
-@keyframes down {
-  0% { top: 0; }
-  100% { top: 50%; }
-}
-
-@-webkit-keyframes down {
+@include keyframes(down) {
   0% { top: 0; }
   100% { top: 50%; }
 }
@@ -91,8 +102,7 @@ body {
     background: $second-color;
 
     &:hover {
-      -webkit-animation: 1s ease-in-out down;
-         -moz-animation: 1s ease-in-out down;
+      @include animation(1s ease-in-out down);
     }
   }
 }
