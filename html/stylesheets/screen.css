@@ -67,24 +67,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 body {
   margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
+code {
+  font-family: "Monaco", "Lucida Console", "Courier Sans", monospace;
+}
+
+/* line 54, ../sass/screen.scss */
 .slide {
   width: 100%;
   height: 100%;
 }
-/* line 49, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .slide .caption {
   position: relative;
   top: 80px;
@@ -94,7 +101,7 @@ body {
   color: #fff8f8;
   text-shadow: rgba(100, 100, 100, 0.2) 3px 3px 0;
 }
-/* line 60, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .slide .content {
   position: relative;
   top: 120px;
@@ -105,80 +112,156 @@ body {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-/* line 74, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .slide:nth-child(4n+1) {
   background: #ea7371;
 }
-/* line 78, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .slide:nth-child(4n+2) {
   background: #ffc1b3;
 }
-/* line 82, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .slide:nth-child(4n+3) {
   background: #88b3cf;
 }
-/* line 86, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .slide:nth-child(4n+4) {
   background: #2d5f73;
 }
 
 @-webkit-keyframes down {
-  /* line 92, ../sass/screen.scss */
+  /* line 101, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 93, ../sass/screen.scss */
+  /* line 102, ../sass/screen.scss */
   100% {
     top: 50%;
   }
 }
 
 @-moz-keyframes down {
-  /* line 92, ../sass/screen.scss */
+  /* line 101, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 93, ../sass/screen.scss */
+  /* line 102, ../sass/screen.scss */
   100% {
     top: 50%;
   }
 }
 
 @-ms-keyframes down {
-  /* line 92, ../sass/screen.scss */
+  /* line 101, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 93, ../sass/screen.scss */
+  /* line 102, ../sass/screen.scss */
   100% {
     top: 50%;
   }
 }
 
 @keyframes down {
-  /* line 92, ../sass/screen.scss */
+  /* line 101, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 93, ../sass/screen.scss */
+  /* line 102, ../sass/screen.scss */
   100% {
     top: 50%;
   }
 }
 
-/* line 97, ../sass/screen.scss */
+@-webkit-keyframes down-and-left {
+  /* line 106, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 107, ../sass/screen.scss */
+  50% {
+    top: 50%;
+    left: 0;
+  }
+
+  /* line 108, ../sass/screen.scss */
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@-moz-keyframes down-and-left {
+  /* line 106, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 107, ../sass/screen.scss */
+  50% {
+    top: 50%;
+    left: 0;
+  }
+
+  /* line 108, ../sass/screen.scss */
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@-ms-keyframes down-and-left {
+  /* line 106, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 107, ../sass/screen.scss */
+  50% {
+    top: 50%;
+    left: 0;
+  }
+
+  /* line 108, ../sass/screen.scss */
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@keyframes down-and-left {
+  /* line 106, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 107, ../sass/screen.scss */
+  50% {
+    top: 50%;
+    left: 0;
+  }
+
+  /* line 108, ../sass/screen.scss */
+  100% {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+/* line 112, ../sass/screen.scss */
 #first-slide .circle {
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background: #ffc1b3;
 }
-/* line 104, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #first-slide .circle:hover {
   -webkit-animation: 1s ease-in-out down;
   -khtml-animation: 1s ease-in-out down;
@@ -186,4 +269,230 @@ body {
   -ms-animation: 1s ease-in-out down;
   -o-animation: 1s ease-in-out down;
   animation: 1s ease-in-out down;
+}
+/* line 124, ../sass/screen.scss */
+#first-slide .animated {
+  -webkit-animation: 1s ease-in-out down-and-left;
+  -khtml-animation: 1s ease-in-out down-and-left;
+  -moz-animation: 1s ease-in-out down-and-left;
+  -ms-animation: 1s ease-in-out down-and-left;
+  -o-animation: 1s ease-in-out down-and-left;
+  animation: 1s ease-in-out down-and-left;
+}
+/* line 128, ../sass/screen.scss */
+#first-slide .scope {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  float: left;
+  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+}
+/* line 136, ../sass/screen.scss */
+#first-slide .scope .scope-header {
+  background: #30363c;
+  color: #fff;
+  height: 30%;
+  padding: 10%;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: rgba(100, 100, 100, 0.2) -1px -1px 0;
+}
+/* line 148, ../sass/screen.scss */
+#first-slide .scope .scope-body {
+  height: 70%;
+  background: #fff8f8;
+  color: #767a7d;
+  font-size: 10pt;
+  text-align: center;
+}
+/* line 156, ../sass/screen.scss */
+#first-slide .scope .scope-body .properties {
+  padding: 10%;
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-size: 10pt;
+  background: #4b525c;
+  color: #fff8f8;
+}
+/* line 169, ../sass/screen.scss */
+#first-slide .scope .scope-body ul {
+  padding: 10%;
+}
+/* line 175, ../sass/screen.scss */
+#first-slide #root-scope {
+  left: 10px;
+}
+/* line 180, ../sass/screen.scss */
+#first-slide #child-scope {
+  top: 50px;
+  left: 190px;
+}
+
+@-webkit-keyframes expand {
+  /* line 187, ../sass/screen.scss */
+  0% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+
+  /* line 188, ../sass/screen.scss */
+  50% {
+    margin-left: -150px;
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
+  }
+
+  /* line 189, ../sass/screen.scss */
+  100% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+}
+
+@-moz-keyframes expand {
+  /* line 187, ../sass/screen.scss */
+  0% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+
+  /* line 188, ../sass/screen.scss */
+  50% {
+    margin-left: -150px;
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
+  }
+
+  /* line 189, ../sass/screen.scss */
+  100% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+}
+
+@-ms-keyframes expand {
+  /* line 187, ../sass/screen.scss */
+  0% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+
+  /* line 188, ../sass/screen.scss */
+  50% {
+    margin-left: -150px;
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
+  }
+
+  /* line 189, ../sass/screen.scss */
+  100% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+}
+
+@keyframes expand {
+  /* line 187, ../sass/screen.scss */
+  0% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+
+  /* line 188, ../sass/screen.scss */
+  50% {
+    margin-left: -150px;
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
+  }
+
+  /* line 189, ../sass/screen.scss */
+  100% {
+    margin-left: -75px;
+    margin-top: -75px;
+    width: 150px;
+    height: 150px;
+    padding-top: 25px;
+  }
+}
+
+/* line 193, ../sass/screen.scss */
+#second-slide .scope {
+  position: absolute;
+  overflow: hidden;
+  top: 100px;
+  left: 100px;
+  text-align: center;
+  padding-top: 10%;
+  border: 5px solid #fff8f8;
+  border-radius: 50%;
+  color: #fff8f8;
+  text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 0;
+  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
+  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
+  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
+  -webkit-animation: 2s ease-in-out expand infinite;
+  -khtml-animation: 2s ease-in-out expand infinite;
+  -moz-animation: 2s ease-in-out expand infinite;
+  -ms-animation: 2s ease-in-out expand infinite;
+  -o-animation: 2s ease-in-out expand infinite;
+  animation: 2s ease-in-out expand infinite;
+}
+
+/* line 215, ../sass/screen.scss */
+#third-slide .scope {
+  position: absolute;
+  overflow: hidden;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
+  background: #fff8f8;
+  color: #767a7d;
+  text-align: center;
+  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
+  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
+  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
+  -webkit-animation: 2s ease-in-out expand infinite;
+  -khtml-animation: 2s ease-in-out expand infinite;
+  -moz-animation: 2s ease-in-out expand infinite;
+  -ms-animation: 2s ease-in-out expand infinite;
+  -o-animation: 2s ease-in-out expand infinite;
+  animation: 2s ease-in-out expand infinite;
+}
+/* line 232, ../sass/screen.scss */
+#third-slide .scope hr {
+  background: #767a7d;
+  width: 125px;
+  height: 1px;
 }

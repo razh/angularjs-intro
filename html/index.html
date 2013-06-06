@@ -7,22 +7,65 @@
 </head>
 <body>
 
-  <div class="slide">
+  <div class="slide" id="first-slide">
     <span class="caption">$scope.$new()</span>
 
-    <div class="content" id="first-slide">
+    <div class="content">
       <div class="circle"></div>
+
+      <div class="scope" id="root-scope">
+        <div class="scope-header">$rootScope</div>
+        <div class="scope-body">
+
+          <div class="properties">Properties</div>
+
+          <ul>
+            <li>{ name: 'Adam' }</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="scope" id="child-scope">
+        <div class="scope-header">child $scope</div>
+        <div class="scope-body">
+
+          <div class="properties">
+            <div class="title">Properties</div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="slide">
+  <div class="slide" id="second-slide">
     <span class="caption">$scope.$watch()</span>
-    <div class="content"></div>
+    <div class="content">
+
+      <div class="scope">
+        <div class="scope-header">$rootScope</div>
+      </div>
+
+    </div>
   </div>
 
-  <div class="slide">
+  <div class="slide" id="third-slide">
     <span class="caption">$scope.$digest()</span>
-    <div class="content"></div>
+    <div class="content">
+
+      <div class="scope">
+        <div class="scope-header">$rootScope</div>
+        <hr/>
+        <ul>
+          <li>Testing.</li>
+          <li>One.</li>
+          <li>Two.</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 
   <div class="slide">
