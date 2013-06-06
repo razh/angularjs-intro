@@ -4,7 +4,6 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-
 @import "compass/css3/";
 
 @mixin keyframes($name) {
@@ -38,8 +37,16 @@ $shadow-color: rgba(100, 100, 100, 0.2);
 $spacing: 40px;
 $content-width: 60%;
 
+$border-radius: 8px;
+
 body {
   margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+}
+
+code {
+  font-family: "Monaco", "Lucida Console", "Courier Sans", monospace;
 }
 
 .slide {
@@ -101,7 +108,7 @@ body {
 
 #first-slide {
   .circle {
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -112,37 +119,88 @@ body {
     }
   }
 
-  .root-scope {
-    position: relative;
-    width: 200px;
-    height: 200px;
+  .animated {
+    @include animation(1s ease-in-out down-and-left);
+  }
 
-    &:hover {
-      @include animation(1s ease-in-out down-and-left);
-    }
+  .scope {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    float: left;
+    @include box-shadow($shadow-color 3px 3px 2px,
+                        $shadow-color 0 0 3px);
 
     .scope-header {
-      background: #000;
+      background: #30363c;
       color: #fff;
-      padding: 25px;
+
+      height: 30%;
+      padding: 10%;
       text-align: center;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
+
+      font-weight: 100;
+      @include text-shadow($shadow-color -1px -1px 0);
     }
 
     .scope-body {
-      padding {
-        right: 50px;
-        bottom: 50px;
-        left: 50px;
+      height: 70%;
+      background: $text-color;
+      color: #767a7d;
+
+      font-size: 10pt;
+      text-align: center;
+
+      .properties {
+        padding: 10%;
+        float: left;
+
+        width: 50%;
+        height: 100%;
+
+        font-size: 10pt;
+
+        background: #4b525c;
+        color: $text-color;
       }
 
-      width: 100%;
-      height: 100%;
-
-      background: rgba( 100, 100, 100, 0.4 );
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
+      ul {
+        padding: 10%;
+      }
     }
+  }
+
+  #root-scope {
+    left: 10px;
+  }
+
+  // Custom CSS for each element.
+  #child-scope {
+    top: 50px;
+    left: 190px;
+  }
+}
+
+@include keyframes(expand) {
+  0% { margin-left: -20px; margin-top: -20px; width: 40px; height: 40px; }
+  100% { margin-left: -100px; margin-top: -100px; width: 200px; height: 200px; }
+}
+
+#second-slide {
+  .scope {
+    position: absolute;
+    overflow: hidden;
+
+    text-align: center;
+    padding-top: 10%;
+
+    border: 5px solid $text-color;
+    border-radius: 50%;
+
+    color: $text-color;
+    @include text-shadow($shadow-color 2px 2px 0);
+    @include box-shadow($shadow-color 3px 3px 2px);
+
+    @include animation(2s ease-in-out expand infinite);
   }
 }
