@@ -109,7 +109,6 @@ code {
   margin-left: -30%;
   width: 60%;
   height: 60%;
-  background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 /* line 83, ../sass/screen.scss */
@@ -334,116 +333,116 @@ code {
 @-webkit-keyframes expand {
   /* line 187, ../sass/screen.scss */
   0% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 
   /* line 188, ../sass/screen.scss */
   50% {
-    margin-left: -150px;
+    margin-left: -100px;
     margin-top: -150px;
     width: 300px;
     height: 300px;
-    padding-top: 50px;
+    padding-top: 75px;
   }
 
   /* line 189, ../sass/screen.scss */
   100% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 }
 
 @-moz-keyframes expand {
   /* line 187, ../sass/screen.scss */
   0% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 
   /* line 188, ../sass/screen.scss */
   50% {
-    margin-left: -150px;
+    margin-left: -100px;
     margin-top: -150px;
     width: 300px;
     height: 300px;
-    padding-top: 50px;
+    padding-top: 75px;
   }
 
   /* line 189, ../sass/screen.scss */
   100% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 }
 
 @-ms-keyframes expand {
   /* line 187, ../sass/screen.scss */
   0% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 
   /* line 188, ../sass/screen.scss */
   50% {
-    margin-left: -150px;
+    margin-left: -100px;
     margin-top: -150px;
     width: 300px;
     height: 300px;
-    padding-top: 50px;
+    padding-top: 75px;
   }
 
   /* line 189, ../sass/screen.scss */
   100% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 }
 
 @keyframes expand {
   /* line 187, ../sass/screen.scss */
   0% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 
   /* line 188, ../sass/screen.scss */
   50% {
-    margin-left: -150px;
+    margin-left: -100px;
     margin-top: -150px;
     width: 300px;
     height: 300px;
-    padding-top: 50px;
+    padding-top: 75px;
   }
 
   /* line 189, ../sass/screen.scss */
   100% {
-    margin-left: -75px;
-    margin-top: -75px;
-    width: 150px;
-    height: 150px;
-    padding-top: 25px;
+    margin-left: -50px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
   }
 }
 
@@ -474,25 +473,31 @@ code {
 #third-slide .scope {
   position: absolute;
   overflow: hidden;
+  text-align: center;
   top: 100px;
   left: 100px;
   border-radius: 50%;
   background: #fff8f8;
-  color: #767a7d;
-  text-align: center;
-  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
-  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
-  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
-  -webkit-animation: 2s ease-in-out expand infinite;
-  -khtml-animation: 2s ease-in-out expand infinite;
-  -moz-animation: 2s ease-in-out expand infinite;
-  -ms-animation: 2s ease-in-out expand infinite;
-  -o-animation: 2s ease-in-out expand infinite;
-  animation: 2s ease-in-out expand infinite;
+  color: #88b3cf;
+  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  -webkit-animation: 5s ease-in-out expand infinite;
+  -khtml-animation: 5s ease-in-out expand infinite;
+  -moz-animation: 5s ease-in-out expand infinite;
+  -ms-animation: 5s ease-in-out expand infinite;
+  -o-animation: 5s ease-in-out expand infinite;
+  animation: 5s ease-in-out expand infinite;
 }
-/* line 232, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 #third-slide .scope hr {
-  background: #767a7d;
+  background: #88b3cf;
+  border: none;
   width: 125px;
-  height: 1px;
+  height: 2px;
+}
+/* line 241, ../sass/screen.scss */
+#third-slide #child-scope {
+  top: 150px;
+  left: 200px;
 }
