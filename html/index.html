@@ -3,6 +3,8 @@
   <meta charset="UTF-8">
   <title>An animated guide to $scopes in AngularJS</title>
 
+  <script type="text/javascript" src="//use.typekit.net/vct5zey.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -12,31 +14,7 @@
 
     <div class="content">
       <div class="circle"></div>
-
-      <div class="scope" id="root-scope">
-        <div class="scope-header">$rootScope</div>
-        <div class="scope-body">
-
-          <div class="properties">Properties</div>
-
-          <ul>
-            <li>{ name: 'Adam' }</li>
-          </ul>
-
-        </div>
-      </div>
-
-      <div class="scope" id="child-scope">
-        <div class="scope-header">child $scope</div>
-        <div class="scope-body">
-
-          <div class="properties">
-            <div class="title">Properties</div>
-          </div>
-
-        </div>
-      </div>
-
+      <div class="circle"></div>
     </div>
   </div>
 
@@ -78,9 +56,15 @@
     </div>
   </div>
 
-  <div class="slide">
+  <div class="slide" id="fourth-slide">
     <span class="caption">$scope.$apply()</span>
-    <div class="content"></div>
+    <div class="content">
+      <div class="layer" id="first-layer"></div>
+      <div class="layer" id="second-layer"></div>
+      <div class="layer" id="third-layer"></div>
+      <div class="layer" id="fourth-layer"></div>
+      <div class="layer" id="fifth-layer"></div>
+    </div>
   </div>
 
   <div class="slide">

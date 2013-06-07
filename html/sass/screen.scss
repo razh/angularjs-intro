@@ -43,7 +43,7 @@ $border-radius: 8px;
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14pt;
 }
 
@@ -60,7 +60,7 @@ code {
     top: 2 * $spacing;
     left: 10%;
 
-    font-family: Georgia, serif;
+    font-family: "ff-tisa-web-pro", Georgia, serif;
     font-size: 3rem;
     color: $text-color;
     @include text-shadow($shadow-color 3px 3px 0);
@@ -97,15 +97,10 @@ code {
   }
 }
 
-@include keyframes(down) {
-  0% { top: 0; }
-  100% { top: 50%; }
-}
-
-@include keyframes(down-and-left) {
-  0% { top: 0; }
-  50% { top: 50%; left: 0; }
-  100% { top: 50%; left: 50%; }
+@include keyframes(first-expand) {
+  0% { border: 15px solid darken($first-color, 10%); }
+  50% { border: 1px solid darken($first-color, 10%); width: 200px; height: 200px; margin-top: -100px; margin-left: -100px; }
+  100% { border: 15px solid darken($first-color, 10%); width: 100px; height: 100px; margin-top: -50px; margin-left: -50px;}
 }
 
 #first-slide {
@@ -113,73 +108,17 @@ code {
     position: absolute;
     width: 100px;
     height: 100px;
+
+    top: 100px;
+    left: 100px;
+
+    margin-top: -50px;
+    margin-left: -50px;
+
     border-radius: 50%;
-    background: $second-color;
+    border: 1px solid darken($first-color, 10%);
 
-    &:hover {
-      @include animation(1s ease-in-out down);
-    }
-  }
-
-  .animated {
-    @include animation(1s ease-in-out down-and-left);
-  }
-
-  .scope {
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    float: left;
-    @include box-shadow($shadow-color 3px 3px 2px,
-                        $shadow-color 0 0 3px);
-
-    .scope-header {
-      background: #30363c;
-      color: #fff;
-
-      height: 30%;
-      padding: 10%;
-      text-align: center;
-
-      font-weight: 100;
-      @include text-shadow($shadow-color -1px -1px 0);
-    }
-
-    .scope-body {
-      height: 70%;
-      background: $text-color;
-      color: $description-color;
-
-      font-size: 10pt;
-      text-align: center;
-
-      .properties {
-        padding: 10%;
-        float: left;
-
-        width: 50%;
-        height: 100%;
-
-        font-size: 10pt;
-
-        background: #4b525c;
-        color: $text-color;
-      }
-
-      ul {
-        padding: 10%;
-      }
-    }
-  }
-
-  #root-scope {
-    left: 10px;
-  }
-
-  // Custom CSS for each element.
-  #child-scope {
-    top: 50px;
-    left: 190px;
+    @include animation(1s ease-in-out first-expand infinite);
   }
 }
 
@@ -193,12 +132,18 @@ code {
   .scope {
     position: absolute;
     overflow: hidden;
+    text-align: center;
 
     top: 100px;
     left: 100px;
 
-    text-align: center;
-    padding-top: 10%;
+    width: 200px;
+    height: 200px;
+
+    margin-left: -50px;
+    margin-top: -100px;
+
+    padding-top: 50px;
 
     border: 5px solid $text-color;
     border-radius: 50%;
@@ -207,7 +152,7 @@ code {
     @include text-shadow($shadow-color 2px 2px 0);
     @include box-shadow($shadow-color 3px 3px 2px);
 
-    @include animation(2s ease-in-out expand infinite);
+    // @include animation(2s ease-in-out expand infinite);
   }
 }
 
@@ -220,6 +165,14 @@ code {
     top: 100px;
     left: 100px;
 
+    width: 200px;
+    height: 200px;
+
+    margin-left: -50px;
+    margin-top: -100px;
+
+    padding-top: 50px;
+
     border-radius: 50%;
 
     background: $text-color;
@@ -228,7 +181,7 @@ code {
     // @include text-shadow($shadow-color 2px 2px 0);
     @include box-shadow($shadow-color 3px 3px 2px,
                         $shadow-color 0 0 3px);
-    @include animation(5s ease-in-out expand infinite);
+    // @include animation(5s ease-in-out expand infinite);
 
     hr {
       background: $third-color;
@@ -241,5 +194,56 @@ code {
   #child-scope {
     top: 150px;
     left: 200px;
+  }
+}
+
+@mixin layer($layer-name, $height) {
+  @include keyframes($layer-name) {
+    0% { top: 0; }
+    50% { top: $height; }
+    100% { top: 0; }
+  }
+}
+
+@include layer("first-layer", 100px);
+@include layer("second-layer", 75px);
+@include layer("third-layer", 50px);
+@include layer("fourth-layer", 25px);
+
+#fourth-slide {
+  .layer {
+    position: absolute;
+    background: $third-color;
+    width: 200px;
+    height: 200px;
+    @include rotate3d(1, 0, -1, 60deg);
+  }
+
+  #first-layer {
+    top: 100px;
+    background: darken($third-color, 40%);
+    @include animation(3s ease-in-out first-layer infinite);
+  }
+
+  #second-layer {
+    top: 75px;
+    background: darken($third-color, 30%);
+    @include animation(3s ease-in-out second-layer infinite);
+  }
+
+  #third-layer {
+    top: 50px;
+    background: darken($third-color, 20%);
+    @include animation(3s ease-in-out third-layer infinite);
+  }
+
+  #fourth-layer {
+    top: 25px;
+    background: darken($third-color, 10%);
+    @include animation(3s ease-in-out fourth-layer infinite);
+  }
+
+  #fifth-layer {
+    top: 0;
   }
 }

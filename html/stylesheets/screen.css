@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 44, ../sass/screen.scss */
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14pt;
 }
 
@@ -96,7 +96,7 @@ code {
   position: relative;
   top: 80px;
   left: 10%;
-  font-family: Georgia, serif;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
   font-size: 3rem;
   color: #fff8f8;
   text-shadow: rgba(100, 100, 100, 0.2) 3px 3px 0;
@@ -128,210 +128,127 @@ code {
   background: #2d5f73;
 }
 
-@-webkit-keyframes down {
+@-webkit-keyframes first-expand {
   /* line 101, ../sass/screen.scss */
   0% {
-    top: 0;
+    border: 15px solid #e34745;
   }
 
   /* line 102, ../sass/screen.scss */
+  50% {
+    border: 1px solid #e34745;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+  /* line 103, ../sass/screen.scss */
   100% {
-    top: 50%;
+    border: 15px solid #e34745;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
   }
 }
 
-@-moz-keyframes down {
+@-moz-keyframes first-expand {
   /* line 101, ../sass/screen.scss */
   0% {
-    top: 0;
+    border: 15px solid #e34745;
   }
 
   /* line 102, ../sass/screen.scss */
+  50% {
+    border: 1px solid #e34745;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+  /* line 103, ../sass/screen.scss */
   100% {
-    top: 50%;
+    border: 15px solid #e34745;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
   }
 }
 
-@-ms-keyframes down {
+@-ms-keyframes first-expand {
   /* line 101, ../sass/screen.scss */
   0% {
-    top: 0;
+    border: 15px solid #e34745;
   }
 
   /* line 102, ../sass/screen.scss */
+  50% {
+    border: 1px solid #e34745;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+  /* line 103, ../sass/screen.scss */
   100% {
-    top: 50%;
+    border: 15px solid #e34745;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
   }
 }
 
-@keyframes down {
+@keyframes first-expand {
   /* line 101, ../sass/screen.scss */
   0% {
-    top: 0;
+    border: 15px solid #e34745;
   }
 
   /* line 102, ../sass/screen.scss */
-  100% {
-    top: 50%;
-  }
-}
-
-@-webkit-keyframes down-and-left {
-  /* line 106, ../sass/screen.scss */
-  0% {
-    top: 0;
-  }
-
-  /* line 107, ../sass/screen.scss */
   50% {
-    top: 50%;
-    left: 0;
+    border: 1px solid #e34745;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
   }
 
-  /* line 108, ../sass/screen.scss */
+  /* line 103, ../sass/screen.scss */
   100% {
-    top: 50%;
-    left: 50%;
+    border: 15px solid #e34745;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
   }
 }
 
-@-moz-keyframes down-and-left {
-  /* line 106, ../sass/screen.scss */
-  0% {
-    top: 0;
-  }
-
-  /* line 107, ../sass/screen.scss */
-  50% {
-    top: 50%;
-    left: 0;
-  }
-
-  /* line 108, ../sass/screen.scss */
-  100% {
-    top: 50%;
-    left: 50%;
-  }
-}
-
-@-ms-keyframes down-and-left {
-  /* line 106, ../sass/screen.scss */
-  0% {
-    top: 0;
-  }
-
-  /* line 107, ../sass/screen.scss */
-  50% {
-    top: 50%;
-    left: 0;
-  }
-
-  /* line 108, ../sass/screen.scss */
-  100% {
-    top: 50%;
-    left: 50%;
-  }
-}
-
-@keyframes down-and-left {
-  /* line 106, ../sass/screen.scss */
-  0% {
-    top: 0;
-  }
-
-  /* line 107, ../sass/screen.scss */
-  50% {
-    top: 50%;
-    left: 0;
-  }
-
-  /* line 108, ../sass/screen.scss */
-  100% {
-    top: 50%;
-    left: 50%;
-  }
-}
-
-/* line 112, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 #first-slide .circle {
   position: absolute;
   width: 100px;
   height: 100px;
+  top: 100px;
+  left: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
   border-radius: 50%;
-  background: #ffc1b3;
-}
-/* line 119, ../sass/screen.scss */
-#first-slide .circle:hover {
-  -webkit-animation: 1s ease-in-out down;
-  -khtml-animation: 1s ease-in-out down;
-  -moz-animation: 1s ease-in-out down;
-  -ms-animation: 1s ease-in-out down;
-  -o-animation: 1s ease-in-out down;
-  animation: 1s ease-in-out down;
-}
-/* line 124, ../sass/screen.scss */
-#first-slide .animated {
-  -webkit-animation: 1s ease-in-out down-and-left;
-  -khtml-animation: 1s ease-in-out down-and-left;
-  -moz-animation: 1s ease-in-out down-and-left;
-  -ms-animation: 1s ease-in-out down-and-left;
-  -o-animation: 1s ease-in-out down-and-left;
-  animation: 1s ease-in-out down-and-left;
-}
-/* line 128, ../sass/screen.scss */
-#first-slide .scope {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  float: left;
-  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
-  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
-  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
-}
-/* line 136, ../sass/screen.scss */
-#first-slide .scope .scope-header {
-  background: #30363c;
-  color: #fff;
-  height: 30%;
-  padding: 10%;
-  text-align: center;
-  font-weight: 100;
-  text-shadow: rgba(100, 100, 100, 0.2) -1px -1px 0;
-}
-/* line 148, ../sass/screen.scss */
-#first-slide .scope .scope-body {
-  height: 70%;
-  background: #fff8f8;
-  color: #767a7d;
-  font-size: 10pt;
-  text-align: center;
-}
-/* line 156, ../sass/screen.scss */
-#first-slide .scope .scope-body .properties {
-  padding: 10%;
-  float: left;
-  width: 50%;
-  height: 100%;
-  font-size: 10pt;
-  background: #4b525c;
-  color: #fff8f8;
-}
-/* line 169, ../sass/screen.scss */
-#first-slide .scope .scope-body ul {
-  padding: 10%;
-}
-/* line 175, ../sass/screen.scss */
-#first-slide #root-scope {
-  left: 10px;
-}
-/* line 180, ../sass/screen.scss */
-#first-slide #child-scope {
-  top: 50px;
-  left: 190px;
+  border: 1px solid #e34745;
+  -webkit-animation: 1s ease-in-out first-expand infinite;
+  -khtml-animation: 1s ease-in-out first-expand infinite;
+  -moz-animation: 1s ease-in-out first-expand infinite;
+  -ms-animation: 1s ease-in-out first-expand infinite;
+  -o-animation: 1s ease-in-out first-expand infinite;
+  animation: 1s ease-in-out first-expand infinite;
 }
 
 @-webkit-keyframes expand {
-  /* line 187, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -340,7 +257,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -349,7 +266,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 189, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -360,7 +277,7 @@ code {
 }
 
 @-moz-keyframes expand {
-  /* line 187, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -369,7 +286,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -378,7 +295,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 189, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -389,7 +306,7 @@ code {
 }
 
 @-ms-keyframes expand {
-  /* line 187, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -398,7 +315,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -407,7 +324,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 189, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -418,7 +335,7 @@ code {
 }
 
 @keyframes expand {
-  /* line 187, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -427,7 +344,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -436,7 +353,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 189, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -446,14 +363,18 @@ code {
   }
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #second-slide .scope {
   position: absolute;
   overflow: hidden;
+  text-align: center;
   top: 100px;
   left: 100px;
-  text-align: center;
-  padding-top: 10%;
+  width: 200px;
+  height: 200px;
+  margin-left: -50px;
+  margin-top: -100px;
+  padding-top: 50px;
   border: 5px solid #fff8f8;
   border-radius: 50%;
   color: #fff8f8;
@@ -461,43 +382,369 @@ code {
   -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
-  -webkit-animation: 2s ease-in-out expand infinite;
-  -khtml-animation: 2s ease-in-out expand infinite;
-  -moz-animation: 2s ease-in-out expand infinite;
-  -ms-animation: 2s ease-in-out expand infinite;
-  -o-animation: 2s ease-in-out expand infinite;
-  animation: 2s ease-in-out expand infinite;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #third-slide .scope {
   position: absolute;
   overflow: hidden;
   text-align: center;
   top: 100px;
   left: 100px;
+  width: 200px;
+  height: 200px;
+  margin-left: -50px;
+  margin-top: -100px;
+  padding-top: 50px;
   border-radius: 50%;
   background: #fff8f8;
   color: #88b3cf;
   -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
-  -webkit-animation: 5s ease-in-out expand infinite;
-  -khtml-animation: 5s ease-in-out expand infinite;
-  -moz-animation: 5s ease-in-out expand infinite;
-  -ms-animation: 5s ease-in-out expand infinite;
-  -o-animation: 5s ease-in-out expand infinite;
-  animation: 5s ease-in-out expand infinite;
 }
-/* line 233, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #third-slide .scope hr {
   background: #88b3cf;
   border: none;
   width: 125px;
   height: 2px;
 }
-/* line 241, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 #third-slide #child-scope {
   top: 150px;
   left: 200px;
+}
+
+@-webkit-keyframes first-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 100px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-moz-keyframes first-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 100px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-ms-keyframes first-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 100px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes first-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 100px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes second-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 75px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-moz-keyframes second-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 75px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-ms-keyframes second-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 75px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes second-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 75px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes third-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 50px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-moz-keyframes third-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 50px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-ms-keyframes third-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 50px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes third-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 50px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes fourth-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 25px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-moz-keyframes fourth-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 25px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-ms-keyframes fourth-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 25px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes fourth-layer {
+  /* line 202, ../sass/screen.scss */
+  0% {
+    top: 0;
+  }
+
+  /* line 203, ../sass/screen.scss */
+  50% {
+    top: 25px;
+  }
+
+  /* line 204, ../sass/screen.scss */
+  100% {
+    top: 0;
+  }
+}
+
+/* line 214, ../sass/screen.scss */
+#fourth-slide .layer {
+  position: absolute;
+  background: #88b3cf;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate3d(1, 0, -1, 60deg);
+  -moz-transform: rotate3d(1, 0, -1, 60deg);
+  -ms-transform: rotate3d(1, 0, -1, 60deg);
+  -o-transform: rotate3d(1, 0, -1, 60deg);
+  transform: rotate3d(1, 0, -1, 60deg);
+}
+/* line 222, ../sass/screen.scss */
+#fourth-slide #first-layer {
+  top: 100px;
+  background: #284c63;
+  -webkit-animation: 3s ease-in-out first-layer infinite;
+  -khtml-animation: 3s ease-in-out first-layer infinite;
+  -moz-animation: 3s ease-in-out first-layer infinite;
+  -ms-animation: 3s ease-in-out first-layer infinite;
+  -o-animation: 3s ease-in-out first-layer infinite;
+  animation: 3s ease-in-out first-layer infinite;
+}
+/* line 228, ../sass/screen.scss */
+#fourth-slide #second-layer {
+  top: 75px;
+  background: #376887;
+  -webkit-animation: 3s ease-in-out second-layer infinite;
+  -khtml-animation: 3s ease-in-out second-layer infinite;
+  -moz-animation: 3s ease-in-out second-layer infinite;
+  -ms-animation: 3s ease-in-out second-layer infinite;
+  -o-animation: 3s ease-in-out second-layer infinite;
+  animation: 3s ease-in-out second-layer infinite;
+}
+/* line 234, ../sass/screen.scss */
+#fourth-slide #third-layer {
+  top: 50px;
+  background: #4583ac;
+  -webkit-animation: 3s ease-in-out third-layer infinite;
+  -khtml-animation: 3s ease-in-out third-layer infinite;
+  -moz-animation: 3s ease-in-out third-layer infinite;
+  -ms-animation: 3s ease-in-out third-layer infinite;
+  -o-animation: 3s ease-in-out third-layer infinite;
+  animation: 3s ease-in-out third-layer infinite;
+}
+/* line 240, ../sass/screen.scss */
+#fourth-slide #fourth-layer {
+  top: 25px;
+  background: #649cc0;
+  -webkit-animation: 3s ease-in-out fourth-layer infinite;
+  -khtml-animation: 3s ease-in-out fourth-layer infinite;
+  -moz-animation: 3s ease-in-out fourth-layer infinite;
+  -ms-animation: 3s ease-in-out fourth-layer infinite;
+  -o-animation: 3s ease-in-out fourth-layer infinite;
+  animation: 3s ease-in-out fourth-layer infinite;
+}
+/* line 246, ../sass/screen.scss */
+#fourth-slide #fifth-layer {
+  top: 0;
 }
