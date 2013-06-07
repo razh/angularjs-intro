@@ -134,16 +134,16 @@ code {
     border: 15px solid #e34745;
   }
 
-  /* line 102, ../sass/screen.scss */
+  /* line 103, ../sass/screen.scss */
   50% {
-    border: 1px solid #e34745;
+    border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
     height: 200px;
     margin-top: -100px;
     margin-left: -100px;
   }
 
-  /* line 103, ../sass/screen.scss */
+  /* line 111, ../sass/screen.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -159,16 +159,16 @@ code {
     border: 15px solid #e34745;
   }
 
-  /* line 102, ../sass/screen.scss */
+  /* line 103, ../sass/screen.scss */
   50% {
-    border: 1px solid #e34745;
+    border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
     height: 200px;
     margin-top: -100px;
     margin-left: -100px;
   }
 
-  /* line 103, ../sass/screen.scss */
+  /* line 111, ../sass/screen.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -184,16 +184,16 @@ code {
     border: 15px solid #e34745;
   }
 
-  /* line 102, ../sass/screen.scss */
+  /* line 103, ../sass/screen.scss */
   50% {
-    border: 1px solid #e34745;
+    border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
     height: 200px;
     margin-top: -100px;
     margin-left: -100px;
   }
 
-  /* line 103, ../sass/screen.scss */
+  /* line 111, ../sass/screen.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -209,16 +209,16 @@ code {
     border: 15px solid #e34745;
   }
 
-  /* line 102, ../sass/screen.scss */
+  /* line 103, ../sass/screen.scss */
   50% {
-    border: 1px solid #e34745;
+    border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
     height: 200px;
     margin-top: -100px;
     margin-left: -100px;
   }
 
-  /* line 103, ../sass/screen.scss */
+  /* line 111, ../sass/screen.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -228,7 +228,7 @@ code {
   }
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #first-slide .circle {
   position: absolute;
   width: 100px;
@@ -239,16 +239,16 @@ code {
   margin-left: -50px;
   border-radius: 50%;
   border: 1px solid #e34745;
-  -webkit-animation: 1s ease-in-out first-expand infinite;
-  -khtml-animation: 1s ease-in-out first-expand infinite;
-  -moz-animation: 1s ease-in-out first-expand infinite;
-  -ms-animation: 1s ease-in-out first-expand infinite;
-  -o-animation: 1s ease-in-out first-expand infinite;
-  animation: 1s ease-in-out first-expand infinite;
+  -webkit-animation: 1s ease first-expand infinite;
+  -khtml-animation: 1s ease first-expand infinite;
+  -moz-animation: 1s ease first-expand infinite;
+  -ms-animation: 1s ease first-expand infinite;
+  -o-animation: 1s ease first-expand infinite;
+  animation: 1s ease first-expand infinite;
 }
 
 @-webkit-keyframes expand {
-  /* line 126, ../sass/screen.scss */
+  /* line 140, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -257,7 +257,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 127, ../sass/screen.scss */
+  /* line 141, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -266,7 +266,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 128, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -277,7 +277,7 @@ code {
 }
 
 @-moz-keyframes expand {
-  /* line 126, ../sass/screen.scss */
+  /* line 140, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -286,7 +286,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 127, ../sass/screen.scss */
+  /* line 141, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -295,7 +295,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 128, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -306,7 +306,7 @@ code {
 }
 
 @-ms-keyframes expand {
-  /* line 126, ../sass/screen.scss */
+  /* line 140, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -315,7 +315,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 127, ../sass/screen.scss */
+  /* line 141, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -324,7 +324,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 128, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -335,7 +335,7 @@ code {
 }
 
 @keyframes expand {
-  /* line 126, ../sass/screen.scss */
+  /* line 140, ../sass/screen.scss */
   0% {
     margin-left: -50px;
     margin-top: -100px;
@@ -344,7 +344,7 @@ code {
     padding-top: 50px;
   }
 
-  /* line 127, ../sass/screen.scss */
+  /* line 141, ../sass/screen.scss */
   50% {
     margin-left: -100px;
     margin-top: -150px;
@@ -353,7 +353,7 @@ code {
     padding-top: 75px;
   }
 
-  /* line 128, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   100% {
     margin-left: -50px;
     margin-top: -100px;
@@ -363,7 +363,7 @@ code {
   }
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 #second-slide .scope {
   position: absolute;
   overflow: hidden;
@@ -384,7 +384,7 @@ code {
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 #third-slide .scope {
   position: absolute;
   overflow: hidden;
@@ -403,292 +403,292 @@ code {
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #third-slide .scope hr {
   background: #88b3cf;
   border: none;
   width: 125px;
   height: 2px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #third-slide #child-scope {
   top: 150px;
   left: 200px;
 }
 
 @-webkit-keyframes first-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 100px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-moz-keyframes first-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 100px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-ms-keyframes first-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 100px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @keyframes first-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 100px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-webkit-keyframes second-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 75px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-moz-keyframes second-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 75px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-ms-keyframes second-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 75px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @keyframes second-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 75px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-webkit-keyframes third-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 50px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-moz-keyframes third-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 50px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-ms-keyframes third-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 50px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @keyframes third-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 50px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-webkit-keyframes fourth-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 25px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-moz-keyframes fourth-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 25px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @-ms-keyframes fourth-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 25px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
 @keyframes fourth-layer {
-  /* line 202, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   0% {
     top: 0;
   }
 
-  /* line 203, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   50% {
     top: 25px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   100% {
     top: 0;
   }
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #fourth-slide .layer {
   position: absolute;
   background: #88b3cf;
@@ -700,7 +700,7 @@ code {
   -o-transform: rotate3d(1, 0, -1, 60deg);
   transform: rotate3d(1, 0, -1, 60deg);
 }
-/* line 222, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #fourth-slide #first-layer {
   top: 100px;
   background: #284c63;
@@ -711,7 +711,7 @@ code {
   -o-animation: 3s ease-in-out first-layer infinite;
   animation: 3s ease-in-out first-layer infinite;
 }
-/* line 228, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 #fourth-slide #second-layer {
   top: 75px;
   background: #376887;
@@ -722,7 +722,7 @@ code {
   -o-animation: 3s ease-in-out second-layer infinite;
   animation: 3s ease-in-out second-layer infinite;
 }
-/* line 234, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #fourth-slide #third-layer {
   top: 50px;
   background: #4583ac;
@@ -733,7 +733,7 @@ code {
   -o-animation: 3s ease-in-out third-layer infinite;
   animation: 3s ease-in-out third-layer infinite;
 }
-/* line 240, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 #fourth-slide #fourth-layer {
   top: 25px;
   background: #649cc0;
@@ -744,13 +744,13 @@ code {
   -o-animation: 3s ease-in-out fourth-layer infinite;
   animation: 3s ease-in-out fourth-layer infinite;
 }
-/* line 246, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 #fourth-slide #fifth-layer {
   top: 0;
 }
 
 @-webkit-keyframes canvas-animation {
-  /* line 252, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -759,7 +759,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 253, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -768,7 +768,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 254, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -779,7 +779,7 @@ code {
 }
 
 @-moz-keyframes canvas-animation {
-  /* line 252, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -788,7 +788,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 253, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -797,7 +797,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 254, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -808,7 +808,7 @@ code {
 }
 
 @-ms-keyframes canvas-animation {
-  /* line 252, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -817,7 +817,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 253, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -826,7 +826,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 254, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -837,7 +837,7 @@ code {
 }
 
 @keyframes canvas-animation {
-  /* line 252, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -846,7 +846,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 253, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -855,7 +855,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 254, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -865,7 +865,7 @@ code {
   }
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 #fifth-slide canvas {
   position: absolute;
   -webkit-animation: 3s ease-in-out canvas-animation infinite;

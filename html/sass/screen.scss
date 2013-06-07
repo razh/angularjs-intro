@@ -98,9 +98,23 @@ code {
 }
 
 @include keyframes(first-expand) {
-  0% { border: 15px solid darken($first-color, 10%); }
-  50% { border: 1px solid darken($first-color, 10%); width: 200px; height: 200px; margin-top: -100px; margin-left: -100px; }
-  100% { border: 15px solid darken($first-color, 10%); width: 100px; height: 100px; margin-top: -50px; margin-left: -50px;}
+  0% { border: 15px solid rgba(darken($first-color, 10%), 1.0); }
+
+  50% {
+    border: 1px solid rgba(darken($first-color, 10%), 0.0);
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+  100% {
+    border: 15px solid rgba(darken($first-color, 10%), 1.0);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
 }
 
 #first-slide {
@@ -118,7 +132,7 @@ code {
     border-radius: 50%;
     border: 1px solid darken($first-color, 10%);
 
-    @include animation(1s ease-in-out first-expand infinite);
+    @include animation(1s ease first-expand infinite);
   }
 }
 
