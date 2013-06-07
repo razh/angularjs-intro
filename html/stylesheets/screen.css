@@ -748,3 +748,130 @@ code {
 #fourth-slide #fifth-layer {
   top: 0;
 }
+
+@-webkit-keyframes canvas-animation {
+  /* line 252, ../sass/screen.scss */
+  0% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+
+  /* line 253, ../sass/screen.scss */
+  50% {
+    -webkit-transform: rotate3d(1, 0, 1, 90deg);
+    -moz-transform: rotate3d(1, 0, 1, 90deg);
+    -ms-transform: rotate3d(1, 0, 1, 90deg);
+    -o-transform: rotate3d(1, 0, 1, 90deg);
+    transform: rotate3d(1, 0, 1, 90deg);
+  }
+
+  /* line 254, ../sass/screen.scss */
+  100% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+}
+
+@-moz-keyframes canvas-animation {
+  /* line 252, ../sass/screen.scss */
+  0% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+
+  /* line 253, ../sass/screen.scss */
+  50% {
+    -webkit-transform: rotate3d(1, 0, 1, 90deg);
+    -moz-transform: rotate3d(1, 0, 1, 90deg);
+    -ms-transform: rotate3d(1, 0, 1, 90deg);
+    -o-transform: rotate3d(1, 0, 1, 90deg);
+    transform: rotate3d(1, 0, 1, 90deg);
+  }
+
+  /* line 254, ../sass/screen.scss */
+  100% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+}
+
+@-ms-keyframes canvas-animation {
+  /* line 252, ../sass/screen.scss */
+  0% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+
+  /* line 253, ../sass/screen.scss */
+  50% {
+    -webkit-transform: rotate3d(1, 0, 1, 90deg);
+    -moz-transform: rotate3d(1, 0, 1, 90deg);
+    -ms-transform: rotate3d(1, 0, 1, 90deg);
+    -o-transform: rotate3d(1, 0, 1, 90deg);
+    transform: rotate3d(1, 0, 1, 90deg);
+  }
+
+  /* line 254, ../sass/screen.scss */
+  100% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+}
+
+@keyframes canvas-animation {
+  /* line 252, ../sass/screen.scss */
+  0% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+
+  /* line 253, ../sass/screen.scss */
+  50% {
+    -webkit-transform: rotate3d(1, 0, 1, 90deg);
+    -moz-transform: rotate3d(1, 0, 1, 90deg);
+    -ms-transform: rotate3d(1, 0, 1, 90deg);
+    -o-transform: rotate3d(1, 0, 1, 90deg);
+    transform: rotate3d(1, 0, 1, 90deg);
+  }
+
+  /* line 254, ../sass/screen.scss */
+  100% {
+    -webkit-transform: rotate3d(1, 0, 1, 0deg);
+    -moz-transform: rotate3d(1, 0, 1, 0deg);
+    -ms-transform: rotate3d(1, 0, 1, 0deg);
+    -o-transform: rotate3d(1, 0, 1, 0deg);
+    transform: rotate3d(1, 0, 1, 0deg);
+  }
+}
+
+/* line 258, ../sass/screen.scss */
+#fifth-slide canvas {
+  position: absolute;
+  -webkit-animation: 3s ease-in-out canvas-animation infinite;
+  -khtml-animation: 3s ease-in-out canvas-animation infinite;
+  -moz-animation: 3s ease-in-out canvas-animation infinite;
+  -ms-animation: 3s ease-in-out canvas-animation infinite;
+  -o-animation: 3s ease-in-out canvas-animation infinite;
+  animation: 3s ease-in-out canvas-animation infinite;
+}
