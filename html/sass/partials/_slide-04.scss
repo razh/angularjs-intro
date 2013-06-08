@@ -4,7 +4,7 @@
   100% { @include rotate3d(1, 0, 1, 0deg); }
 }
 
-#fifth-slide {
+#slide-04 {
   canvas {
     position: absolute;
     @include animation(3s ease-in-out canvas-animation infinite);

@@ -1,9 +1,9 @@
 (function( $, window, document, undefined ) {
   'use strict';
 
-  var $fifthSlide = $( '#fifth-slide' );
+  var $fifthSlide = $( '#slide-04' );
 
-  var canvas = $fifthSlide.find( '#fifth-slide-canvas' )[0];
+  var canvas = $fifthSlide.find( '#slide-04-canvas' )[0];
   var ctx = canvas.getContext( '2d' );
 
   canvas.width = 0.5 * $fifthSlide[0].offsetWidth;
@@ -17,7 +17,7 @@
   var halfWidth = 0.5 * canvas.width,
       halfHeight = 0.5 * canvas.height;
 
-  var color = $( '#second-slide' ).css( 'background-color' );
+  var color = $( '#slide-01' ).css( 'background-color' );
 
   // A simple spiral line.
   ctx.moveTo( 0, halfHeight );

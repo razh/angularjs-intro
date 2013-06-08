@@ -11,12 +11,19 @@
 @include layer("third-layer", 50px);
 @include layer("fourth-layer", 25px);
 
-#fourth-slide {
+#slide-03 {
   .layer {
     position: absolute;
     background: $third-color;
+
+    top: 60%;
+    left: 50%;
+
     width: 200px;
     height: 200px;
+
+    margin-left: -100px;
+
     @include rotate3d(1, 0, -1, 60deg);
   }
 

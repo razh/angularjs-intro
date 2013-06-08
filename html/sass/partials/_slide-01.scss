@@ -1,16 +1,16 @@
-#second-slide {
+#slide-01 {
   .scope {
     position: absolute;
     overflow: hidden;
     text-align: center;
 
-    top: 100px;
-    left: 100px;
+    top: 50%;
+    left: 50%;
 
     width: 200px;
     height: 200px;
 
-    margin-left: -50px;
+    margin-left: -100px;
     margin-top: -100px;
 
     padding-top: 50px;
