@@ -1,0 +1,22 @@
+@import "compass/css3/";
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+   -khtml-animation: #{$animation};
+     -moz-animation: #{$animation};
+      -ms-animation: #{$animation};
+       -o-animation: #{$animation};
+          animation: #{$animation};
+}
+
+@mixin default-box-shadow() {
+  @include box-shadow($shadow-color 3px 3px 2px,
+                      $shadow-color 0 0 3px);
+}

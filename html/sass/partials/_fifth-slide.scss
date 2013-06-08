@@ -1,0 +1,12 @@
+@include keyframes(canvas-animation) {
+  0% { @include rotate3d(1, 0, 1, 0deg); }
+  50% { @include rotate3d(1, 0, 1, 90deg); }
+  100% { @include rotate3d(1, 0, 1, 0deg); }
+}
+
+#fifth-slide {
+  canvas {
+    position: absolute;
+    @include animation(3s ease-in-out canvas-animation infinite);
+  }
+}

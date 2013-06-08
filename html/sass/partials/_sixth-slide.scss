@@ -1,0 +1,58 @@
+$sixth-slide-border-radius: 20px;
+
+#sixth-slide {
+  .scope {
+    height: 76%;
+    border-radius: $sixth-slide-border-radius;
+    @include box-shadow($shadow-color 6px 6px 0,
+                        $shadow-color 0 0 6px);
+
+    .scope-header {
+      position: relative;
+
+      background: darken($fourth-color, 10%);
+      color: $text-color;
+
+      height: 25%;
+      padding: 4%;
+
+      font-size: 28pt;
+      font-weight: bold;
+      text-align: center;
+
+      border-top-left-radius: $sixth-slide-border-radius;
+      border-top-right-radius: $sixth-slide-border-radius;
+    }
+
+    .scope-body {
+      background: $text-color;
+      height: 75%;
+
+      border-bottom-left-radius: $sixth-slide-border-radius;
+      border-bottom-right-radius: $sixth-slide-border-radius;
+
+      .left,
+      .center,
+      .right {
+        float: left;
+        width: 33.33%;
+        height: 100%;
+        padding: 8%;
+        overflow: hidden;
+
+        .row {
+          position: relative;
+          background: $third-color;
+          width: 100%;
+          height: 15px;
+          margin-bottom: 30px;
+          border-radius: 5px;
+        }
+
+        .row-75 {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
