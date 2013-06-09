@@ -2,17 +2,14 @@ $square-width: 50px;
 $packet-width: 14px;
 $path-width: 6px;
 
+$slide-06-dark-shade: darken($fourth-color, 10%);
+$slide-06-darker-shade: darken($fourth-color, 20%);
+
+$slide-06-second-row: 55%;
+
 @include keyframes(packet) {
   0% { top: 0%; }
   100% { top: 100%; }
-}
-
-@mixin path($angle) {
-  @include rotate($angle);
-
-  .packet {
-    @include rotate(-$angle);
-  }
 }
 
 #slide-06 {
@@ -26,12 +23,12 @@ $path-width: 6px;
     margin-top: -0.5 * $square-width;
     margin-left: -0.5 * $square-width;
 
-    border-radius: 10px;
-    @include default-box-shadow();
+    border-radius: 2 * $path-width;
+    border: $path-width solid $slide-06-darker-shade;
   }
 
   .parent {
-    background: darken($fourth-color, 10%);
+    background: $slide-06-dark-shade;
     top: 20%;
     left: 50%;
   }
@@ -48,7 +45,7 @@ $path-width: 6px;
     margin-left: -0.5 * $path-width;
     @include transform-origin($path-width, 0);
 
-    background: darken($fourth-color, 20%);
+    background: $slide-06-darker-shade;
     @include default-box-shadow();
 
 
@@ -62,9 +59,9 @@ $path-width: 6px;
       margin-left: 0.5 * ($path-width - $packet-width);
 
       border-radius: 50%;
+      border: 0.5 * $path-width solid $slide-06-darker-shade;
 
       background: $packet-color;
-      @include box-shadow(transparentize($packet-color, 0.1) 0 0 16px);
     }
   }
 
@@ -90,32 +87,33 @@ $path-width: 6px;
     height: 40%;
   }
 
-  #path-00 { @include path(45deg); }
-  #path-01 { @include path(18deg); }
-  #path-02 { @include path(-18deg); }
-  #path-03 { @include path(-45deg); }
+  #path-00 { @include rotate(45deg); }
+  #path-01 { @include rotate(18deg); }
+  #path-02 { @include rotate(-18deg); }
+  #path-03 { @include rotate(-45deg); }
 
   .child {
     background: $text-color;
+    @include default-box-shadow();
   }
 
   #child-00 {
-    top: 55%;
+    top: $slide-06-second-row;
     left: 20%;
   }
 
   #child-01 {
-    top: 55%;
+    top: $slide-06-second-row;
     left: 40%;
   }
 
   #child-02 {
-    top: 55%;
+    top: $slide-06-second-row;
     left: 60%;
   }
 
   #child-03 {
-    top: 55%;
+    top: $slide-06-second-row;
     left: 80%;
   }
 }

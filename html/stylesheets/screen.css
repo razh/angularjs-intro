@@ -133,12 +133,12 @@ code {
 }
 
 @-webkit-keyframes first-expand {
-  /* line 2, ../sass/partials/_slide-00.scss */
+  /* line 4, ../sass/partials/_slide-00.scss */
   0% {
     border: 15px solid #e34745;
   }
 
-  /* line 4, ../sass/partials/_slide-00.scss */
+  /* line 6, ../sass/partials/_slide-00.scss */
   50% {
     border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
@@ -147,7 +147,7 @@ code {
     margin-left: -100px;
   }
 
-  /* line 12, ../sass/partials/_slide-00.scss */
+  /* line 14, ../sass/partials/_slide-00.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -158,12 +158,12 @@ code {
 }
 
 @-moz-keyframes first-expand {
-  /* line 2, ../sass/partials/_slide-00.scss */
+  /* line 4, ../sass/partials/_slide-00.scss */
   0% {
     border: 15px solid #e34745;
   }
 
-  /* line 4, ../sass/partials/_slide-00.scss */
+  /* line 6, ../sass/partials/_slide-00.scss */
   50% {
     border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
@@ -172,7 +172,7 @@ code {
     margin-left: -100px;
   }
 
-  /* line 12, ../sass/partials/_slide-00.scss */
+  /* line 14, ../sass/partials/_slide-00.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -183,12 +183,12 @@ code {
 }
 
 @-ms-keyframes first-expand {
-  /* line 2, ../sass/partials/_slide-00.scss */
+  /* line 4, ../sass/partials/_slide-00.scss */
   0% {
     border: 15px solid #e34745;
   }
 
-  /* line 4, ../sass/partials/_slide-00.scss */
+  /* line 6, ../sass/partials/_slide-00.scss */
   50% {
     border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
@@ -197,7 +197,7 @@ code {
     margin-left: -100px;
   }
 
-  /* line 12, ../sass/partials/_slide-00.scss */
+  /* line 14, ../sass/partials/_slide-00.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -208,12 +208,12 @@ code {
 }
 
 @keyframes first-expand {
-  /* line 2, ../sass/partials/_slide-00.scss */
+  /* line 4, ../sass/partials/_slide-00.scss */
   0% {
     border: 15px solid #e34745;
   }
 
-  /* line 4, ../sass/partials/_slide-00.scss */
+  /* line 6, ../sass/partials/_slide-00.scss */
   50% {
     border: 1px solid rgba(227, 71, 69, 0);
     width: 200px;
@@ -222,7 +222,7 @@ code {
     margin-left: -100px;
   }
 
-  /* line 12, ../sass/partials/_slide-00.scss */
+  /* line 14, ../sass/partials/_slide-00.scss */
   100% {
     border: 15px solid #e34745;
     width: 100px;
@@ -233,7 +233,7 @@ code {
 }
 
 @-webkit-keyframes dot-expand {
-  /* line 22, ../sass/partials/_slide-00.scss */
+  /* line 24, ../sass/partials/_slide-00.scss */
   0% {
     width: 10px;
     height: 10px;
@@ -242,7 +242,7 @@ code {
     background: #e34745;
   }
 
-  /* line 23, ../sass/partials/_slide-00.scss */
+  /* line 25, ../sass/partials/_slide-00.scss */
   50% {
     width: 60px;
     height: 60px;
@@ -251,7 +251,7 @@ code {
     background: rgba(227, 71, 69, 0);
   }
 
-  /* line 24, ../sass/partials/_slide-00.scss */
+  /* line 26, ../sass/partials/_slide-00.scss */
   100% {
     width: 10px;
     height: 10px;
@@ -262,7 +262,7 @@ code {
 }
 
 @-moz-keyframes dot-expand {
-  /* line 22, ../sass/partials/_slide-00.scss */
+  /* line 24, ../sass/partials/_slide-00.scss */
   0% {
     width: 10px;
     height: 10px;
@@ -271,7 +271,7 @@ code {
     background: #e34745;
   }
 
-  /* line 23, ../sass/partials/_slide-00.scss */
+  /* line 25, ../sass/partials/_slide-00.scss */
   50% {
     width: 60px;
     height: 60px;
@@ -280,7 +280,7 @@ code {
     background: rgba(227, 71, 69, 0);
   }
 
-  /* line 24, ../sass/partials/_slide-00.scss */
+  /* line 26, ../sass/partials/_slide-00.scss */
   100% {
     width: 10px;
     height: 10px;
@@ -291,7 +291,7 @@ code {
 }
 
 @-ms-keyframes dot-expand {
-  /* line 22, ../sass/partials/_slide-00.scss */
+  /* line 24, ../sass/partials/_slide-00.scss */
   0% {
     width: 10px;
     height: 10px;
@@ -300,7 +300,7 @@ code {
     background: #e34745;
   }
 
-  /* line 23, ../sass/partials/_slide-00.scss */
+  /* line 25, ../sass/partials/_slide-00.scss */
   50% {
     width: 60px;
     height: 60px;
@@ -309,7 +309,7 @@ code {
     background: rgba(227, 71, 69, 0);
   }
 
-  /* line 24, ../sass/partials/_slide-00.scss */
+  /* line 26, ../sass/partials/_slide-00.scss */
   100% {
     width: 10px;
     height: 10px;
@@ -320,7 +320,7 @@ code {
 }
 
 @keyframes dot-expand {
-  /* line 22, ../sass/partials/_slide-00.scss */
+  /* line 24, ../sass/partials/_slide-00.scss */
   0% {
     width: 10px;
     height: 10px;
@@ -329,7 +329,7 @@ code {
     background: #e34745;
   }
 
-  /* line 23, ../sass/partials/_slide-00.scss */
+  /* line 25, ../sass/partials/_slide-00.scss */
   50% {
     width: 60px;
     height: 60px;
@@ -338,7 +338,7 @@ code {
     background: rgba(227, 71, 69, 0);
   }
 
-  /* line 24, ../sass/partials/_slide-00.scss */
+  /* line 26, ../sass/partials/_slide-00.scss */
   100% {
     width: 10px;
     height: 10px;
@@ -348,7 +348,7 @@ code {
   }
 }
 
-/* line 28, ../sass/partials/_slide-00.scss */
+/* line 30, ../sass/partials/_slide-00.scss */
 #slide-00 .circle {
   position: absolute;
   width: 100px;
@@ -366,13 +366,13 @@ code {
   -o-animation: first-expand 1s ease infinite;
   animation: first-expand 1s ease infinite;
 }
-/* line 45, ../sass/partials/_slide-00.scss */
+/* line 47, ../sass/partials/_slide-00.scss */
 #slide-00 .dot {
   position: absolute;
   background: #e34745;
   border-radius: 50%;
 }
-/* line 52, ../sass/partials/_slide-00.scss */
+/* line 54, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-00 {
   top: 10%;
   left: 20%;
@@ -383,7 +383,7 @@ code {
   -o-animation: dot-expand 0.8s ease-out infinite;
   animation: dot-expand 0.8s ease-out infinite;
 }
-/* line 58, ../sass/partials/_slide-00.scss */
+/* line 60, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-01 {
   top: 80%;
   left: 75%;
@@ -394,7 +394,7 @@ code {
   -o-animation: dot-expand 1.5s ease-out infinite;
   animation: dot-expand 1.5s ease-out infinite;
 }
-/* line 64, ../sass/partials/_slide-00.scss */
+/* line 66, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-02 {
   top: 0%;
   left: 100%;
@@ -405,7 +405,7 @@ code {
   -o-animation: dot-expand 0.9s ease-out infinite;
   animation: dot-expand 0.9s ease-out infinite;
 }
-/* line 70, ../sass/partials/_slide-00.scss */
+/* line 72, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-03 {
   top: 60%;
   left: 0%;
@@ -994,54 +994,54 @@ code {
 }
 
 @-webkit-keyframes packet {
-  /* line 6, ../sass/partials/_slide-06.scss */
+  /* line 11, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 7, ../sass/partials/_slide-06.scss */
+  /* line 12, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
 @-moz-keyframes packet {
-  /* line 6, ../sass/partials/_slide-06.scss */
+  /* line 11, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 7, ../sass/partials/_slide-06.scss */
+  /* line 12, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
 @-ms-keyframes packet {
-  /* line 6, ../sass/partials/_slide-06.scss */
+  /* line 11, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 7, ../sass/partials/_slide-06.scss */
+  /* line 12, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
 @keyframes packet {
-  /* line 6, ../sass/partials/_slide-06.scss */
+  /* line 11, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 7, ../sass/partials/_slide-06.scss */
+  /* line 12, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
-/* line 20, ../sass/partials/_slide-06.scss */
+/* line 17, ../sass/partials/_slide-06.scss */
 #slide-06 .parent,
 #slide-06 .child {
   position: absolute;
@@ -1049,18 +1049,16 @@ code {
   height: 50px;
   margin-top: -25px;
   margin-left: -25px;
-  border-radius: 10px;
-  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
-  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
-  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  border-radius: 12px;
+  border: 6px solid #10222a;
 }
-/* line 33, ../sass/partials/_slide-06.scss */
+/* line 30, ../sass/partials/_slide-06.scss */
 #slide-06 .parent {
   background: #1f414e;
   top: 20%;
   left: 50%;
 }
-/* line 39, ../sass/partials/_slide-06.scss */
+/* line 36, ../sass/partials/_slide-06.scss */
 #slide-06 .path {
   position: absolute;
   width: 6px;
@@ -1078,7 +1076,7 @@ code {
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 55, ../sass/partials/_slide-06.scss */
+/* line 52, ../sass/partials/_slide-06.scss */
 #slide-06 .path .packet {
   position: absolute;
   width: 14px;
@@ -1086,12 +1084,10 @@ code {
   margin-top: -7px;
   margin-left: -4px;
   border-radius: 50%;
+  border: 3px solid #10222a;
   background: #ffe090;
-  -webkit-box-shadow: rgba(255, 224, 144, 0.9) 0 0 16px;
-  -moz-box-shadow: rgba(255, 224, 144, 0.9) 0 0 16px;
-  box-shadow: rgba(255, 224, 144, 0.9) 0 0 16px;
 }
-/* line 71, ../sass/partials/_slide-06.scss */
+/* line 68, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-00 {
   -webkit-animation: packet 6s ease-in-out infinite;
   -khtml-animation: packet 6s ease-in-out infinite;
@@ -1100,7 +1096,7 @@ code {
   -o-animation: packet 6s ease-in-out infinite;
   animation: packet 6s ease-in-out infinite;
 }
-/* line 75, ../sass/partials/_slide-06.scss */
+/* line 72, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-01 {
   -webkit-animation: packet 6s 2s ease-in-out infinite;
   -khtml-animation: packet 6s 2s ease-in-out infinite;
@@ -1109,7 +1105,7 @@ code {
   -o-animation: packet 6s 2s ease-in-out infinite;
   animation: packet 6s 2s ease-in-out infinite;
 }
-/* line 79, ../sass/partials/_slide-06.scss */
+/* line 76, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-02 {
   -webkit-animation: packet 6s 4s ease-in-out infinite;
   -khtml-animation: packet 6s 4s ease-in-out infinite;
@@ -1118,17 +1114,17 @@ code {
   -o-animation: packet 6s 4s ease-in-out infinite;
   animation: packet 6s 4s ease-in-out infinite;
 }
-/* line 84, ../sass/partials/_slide-06.scss */
+/* line 81, ../sass/partials/_slide-06.scss */
 #slide-06 #path-00,
 #slide-06 #path-03 {
   height: 50%;
 }
-/* line 89, ../sass/partials/_slide-06.scss */
+/* line 86, ../sass/partials/_slide-06.scss */
 #slide-06 #path-01,
 #slide-06 #path-02 {
   height: 40%;
 }
-/* line 93, ../sass/partials/_slide-06.scss */
+/* line 90, ../sass/partials/_slide-06.scss */
 #slide-06 #path-00 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1136,15 +1132,7 @@ code {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 13, ../sass/partials/_slide-06.scss */
-#slide-06 #path-00 .packet {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-/* line 94, ../sass/partials/_slide-06.scss */
+/* line 91, ../sass/partials/_slide-06.scss */
 #slide-06 #path-01 {
   -webkit-transform: rotate(18deg);
   -moz-transform: rotate(18deg);
@@ -1152,15 +1140,7 @@ code {
   -o-transform: rotate(18deg);
   transform: rotate(18deg);
 }
-/* line 13, ../sass/partials/_slide-06.scss */
-#slide-06 #path-01 .packet {
-  -webkit-transform: rotate(-18deg);
-  -moz-transform: rotate(-18deg);
-  -ms-transform: rotate(-18deg);
-  -o-transform: rotate(-18deg);
-  transform: rotate(-18deg);
-}
-/* line 95, ../sass/partials/_slide-06.scss */
+/* line 92, ../sass/partials/_slide-06.scss */
 #slide-06 #path-02 {
   -webkit-transform: rotate(-18deg);
   -moz-transform: rotate(-18deg);
@@ -1168,15 +1148,7 @@ code {
   -o-transform: rotate(-18deg);
   transform: rotate(-18deg);
 }
-/* line 13, ../sass/partials/_slide-06.scss */
-#slide-06 #path-02 .packet {
-  -webkit-transform: rotate(18deg);
-  -moz-transform: rotate(18deg);
-  -ms-transform: rotate(18deg);
-  -o-transform: rotate(18deg);
-  transform: rotate(18deg);
-}
-/* line 96, ../sass/partials/_slide-06.scss */
+/* line 93, ../sass/partials/_slide-06.scss */
 #slide-06 #path-03 {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1184,34 +1156,29 @@ code {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 13, ../sass/partials/_slide-06.scss */
-#slide-06 #path-03 .packet {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-/* line 98, ../sass/partials/_slide-06.scss */
+/* line 95, ../sass/partials/_slide-06.scss */
 #slide-06 .child {
   background: #fff8f8;
+  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 102, ../sass/partials/_slide-06.scss */
+/* line 100, ../sass/partials/_slide-06.scss */
 #slide-06 #child-00 {
   top: 55%;
   left: 20%;
 }
-/* line 107, ../sass/partials/_slide-06.scss */
+/* line 105, ../sass/partials/_slide-06.scss */
 #slide-06 #child-01 {
   top: 55%;
   left: 40%;
 }
-/* line 112, ../sass/partials/_slide-06.scss */
+/* line 110, ../sass/partials/_slide-06.scss */
 #slide-06 #child-02 {
   top: 55%;
   left: 60%;
 }
-/* line 117, ../sass/partials/_slide-06.scss */
+/* line 115, ../sass/partials/_slide-06.scss */
 #slide-06 #child-03 {
   top: 55%;
   left: 80%;
