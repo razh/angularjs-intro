@@ -1,10 +1,18 @@
 $square-width: 50px;
 $packet-width: 14px;
-$path-width: 8px;
+$path-width: 6px;
 
 @include keyframes(packet) {
   0% { top: 0%; }
   100% { top: 100%; }
+}
+
+@mixin path($angle) {
+  @include rotate($angle);
+
+  .packet {
+    @include rotate(-$angle);
+  }
 }
 
 #slide-06 {
@@ -53,7 +61,7 @@ $path-width: 8px;
       margin-top: -0.5 * $packet-width;
       margin-left: 0.5 * ($path-width - $packet-width);
 
-      border-radius: 3px;
+      border-radius: 50%;
 
       background: $packet-color;
       @include box-shadow(transparentize($packet-color, 0.1) 0 0 16px);
@@ -61,15 +69,15 @@ $path-width: 8px;
   }
 
   #packet-00 {
-    @include animation(packet 3s linear infinite);
+    @include animation(packet 6s ease-in-out infinite);
   }
 
   #packet-01 {
-    @include animation(packet 3s 1s linear infinite);
+    @include animation(packet 6s 2s ease-in-out infinite);
   }
 
   #packet-02 {
-    @include animation(packet 3s 2s linear infinite);
+    @include animation(packet 6s 4s ease-in-out infinite);
   }
 
   #path-00,
@@ -82,11 +90,10 @@ $path-width: 8px;
     height: 40%;
   }
 
-  #path-00 { @include rotate(45deg); }
-  #path-01 { @include rotate(18deg); }
-  #path-02 { @include rotate(-18deg); }
-  #path-03 { @include rotate(-45deg); }
-
+  #path-00 { @include path(45deg); }
+  #path-01 { @include path(18deg); }
+  #path-02 { @include path(-18deg); }
+  #path-03 { @include path(-45deg); }
 
   .child {
     background: $text-color;
