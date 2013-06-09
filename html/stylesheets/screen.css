@@ -359,12 +359,12 @@ code {
   margin-left: -50px;
   border-radius: 50%;
   border: 1px solid #e34745;
-  -webkit-animation: 1s ease first-expand infinite;
-  -khtml-animation: 1s ease first-expand infinite;
-  -moz-animation: 1s ease first-expand infinite;
-  -ms-animation: 1s ease first-expand infinite;
-  -o-animation: 1s ease first-expand infinite;
-  animation: 1s ease first-expand infinite;
+  -webkit-animation: first-expand 1s ease infinite;
+  -khtml-animation: first-expand 1s ease infinite;
+  -moz-animation: first-expand 1s ease infinite;
+  -ms-animation: first-expand 1s ease infinite;
+  -o-animation: first-expand 1s ease infinite;
+  animation: first-expand 1s ease infinite;
 }
 /* line 45, ../sass/partials/_slide-00.scss */
 #slide-00 .dot {
@@ -373,48 +373,48 @@ code {
   border-radius: 50%;
 }
 /* line 52, ../sass/partials/_slide-00.scss */
-#slide-00 #first-dot {
+#slide-00 #dot-00 {
   top: 10%;
   left: 20%;
-  -webkit-animation: 0.8s ease-out dot-expand infinite;
-  -khtml-animation: 0.8s ease-out dot-expand infinite;
-  -moz-animation: 0.8s ease-out dot-expand infinite;
-  -ms-animation: 0.8s ease-out dot-expand infinite;
-  -o-animation: 0.8s ease-out dot-expand infinite;
-  animation: 0.8s ease-out dot-expand infinite;
+  -webkit-animation: dot-expand 0.8s ease-out infinite;
+  -khtml-animation: dot-expand 0.8s ease-out infinite;
+  -moz-animation: dot-expand 0.8s ease-out infinite;
+  -ms-animation: dot-expand 0.8s ease-out infinite;
+  -o-animation: dot-expand 0.8s ease-out infinite;
+  animation: dot-expand 0.8s ease-out infinite;
 }
 /* line 58, ../sass/partials/_slide-00.scss */
-#slide-00 #second-dot {
+#slide-00 #dot-01 {
   top: 80%;
   left: 75%;
-  -webkit-animation: 1.5s ease-out dot-expand infinite;
-  -khtml-animation: 1.5s ease-out dot-expand infinite;
-  -moz-animation: 1.5s ease-out dot-expand infinite;
-  -ms-animation: 1.5s ease-out dot-expand infinite;
-  -o-animation: 1.5s ease-out dot-expand infinite;
-  animation: 1.5s ease-out dot-expand infinite;
+  -webkit-animation: dot-expand 1.5s ease-out infinite;
+  -khtml-animation: dot-expand 1.5s ease-out infinite;
+  -moz-animation: dot-expand 1.5s ease-out infinite;
+  -ms-animation: dot-expand 1.5s ease-out infinite;
+  -o-animation: dot-expand 1.5s ease-out infinite;
+  animation: dot-expand 1.5s ease-out infinite;
 }
 /* line 64, ../sass/partials/_slide-00.scss */
-#slide-00 #third-dot {
+#slide-00 #dot-02 {
   top: 0%;
   left: 100%;
-  -webkit-animation: 0.9s ease-out dot-expand infinite;
-  -khtml-animation: 0.9s ease-out dot-expand infinite;
-  -moz-animation: 0.9s ease-out dot-expand infinite;
-  -ms-animation: 0.9s ease-out dot-expand infinite;
-  -o-animation: 0.9s ease-out dot-expand infinite;
-  animation: 0.9s ease-out dot-expand infinite;
+  -webkit-animation: dot-expand 0.9s ease-out infinite;
+  -khtml-animation: dot-expand 0.9s ease-out infinite;
+  -moz-animation: dot-expand 0.9s ease-out infinite;
+  -ms-animation: dot-expand 0.9s ease-out infinite;
+  -o-animation: dot-expand 0.9s ease-out infinite;
+  animation: dot-expand 0.9s ease-out infinite;
 }
 /* line 70, ../sass/partials/_slide-00.scss */
-#slide-00 #fourth-dot {
+#slide-00 #dot-03 {
   top: 60%;
   left: 0%;
-  -webkit-animation: 1.2s ease-out dot-expand infinite;
-  -khtml-animation: 1.2s ease-out dot-expand infinite;
-  -moz-animation: 1.2s ease-out dot-expand infinite;
-  -ms-animation: 1.2s ease-out dot-expand infinite;
-  -o-animation: 1.2s ease-out dot-expand infinite;
-  animation: 1.2s ease-out dot-expand infinite;
+  -webkit-animation: dot-expand 1.2s ease-out infinite;
+  -khtml-animation: dot-expand 1.2s ease-out infinite;
+  -moz-animation: dot-expand 1.2s ease-out infinite;
+  -ms-animation: dot-expand 1.2s ease-out infinite;
+  -o-animation: dot-expand 1.2s ease-out infinite;
+  animation: dot-expand 1.2s ease-out infinite;
 }
 
 /* line 2, ../sass/partials/_slide-01.scss */
@@ -470,7 +470,7 @@ code {
   left: 60%;
 }
 
-@-webkit-keyframes first-layer {
+@-webkit-keyframes layer-00 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -487,7 +487,7 @@ code {
   }
 }
 
-@-moz-keyframes first-layer {
+@-moz-keyframes layer-00 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -504,7 +504,7 @@ code {
   }
 }
 
-@-ms-keyframes first-layer {
+@-ms-keyframes layer-00 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -521,7 +521,7 @@ code {
   }
 }
 
-@keyframes first-layer {
+@keyframes layer-00 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -538,7 +538,7 @@ code {
   }
 }
 
-@-webkit-keyframes second-layer {
+@-webkit-keyframes layer-01 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -555,7 +555,7 @@ code {
   }
 }
 
-@-moz-keyframes second-layer {
+@-moz-keyframes layer-01 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -572,7 +572,7 @@ code {
   }
 }
 
-@-ms-keyframes second-layer {
+@-ms-keyframes layer-01 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -589,7 +589,7 @@ code {
   }
 }
 
-@keyframes second-layer {
+@keyframes layer-01 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -606,7 +606,7 @@ code {
   }
 }
 
-@-webkit-keyframes third-layer {
+@-webkit-keyframes layer-02 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -623,7 +623,7 @@ code {
   }
 }
 
-@-moz-keyframes third-layer {
+@-moz-keyframes layer-02 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -640,7 +640,7 @@ code {
   }
 }
 
-@-ms-keyframes third-layer {
+@-ms-keyframes layer-02 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -657,7 +657,7 @@ code {
   }
 }
 
-@keyframes third-layer {
+@keyframes layer-02 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -674,7 +674,7 @@ code {
   }
 }
 
-@-webkit-keyframes fourth-layer {
+@-webkit-keyframes layer-03 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -691,7 +691,7 @@ code {
   }
 }
 
-@-moz-keyframes fourth-layer {
+@-moz-keyframes layer-03 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -708,7 +708,7 @@ code {
   }
 }
 
-@-ms-keyframes fourth-layer {
+@-ms-keyframes layer-03 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -725,7 +725,7 @@ code {
   }
 }
 
-@keyframes fourth-layer {
+@keyframes layer-03 {
   /* line 3, ../sass/partials/_slide-03.scss */
   0% {
     top: 0;
@@ -758,51 +758,51 @@ code {
   transform: rotate3d(1, 0, -1, 60deg);
 }
 /* line 30, ../sass/partials/_slide-03.scss */
-#slide-03 #first-layer {
+#slide-03 #layer-00 {
   top: 100px;
   background: #284c63;
-  -webkit-animation: 3s ease-in-out first-layer infinite;
-  -khtml-animation: 3s ease-in-out first-layer infinite;
-  -moz-animation: 3s ease-in-out first-layer infinite;
-  -ms-animation: 3s ease-in-out first-layer infinite;
-  -o-animation: 3s ease-in-out first-layer infinite;
-  animation: 3s ease-in-out first-layer infinite;
+  -webkit-animation: layer-00 3s ease-in-out infinite;
+  -khtml-animation: layer-00 3s ease-in-out infinite;
+  -moz-animation: layer-00 3s ease-in-out infinite;
+  -ms-animation: layer-00 3s ease-in-out infinite;
+  -o-animation: layer-00 3s ease-in-out infinite;
+  animation: layer-00 3s ease-in-out infinite;
 }
 /* line 36, ../sass/partials/_slide-03.scss */
-#slide-03 #second-layer {
+#slide-03 #layer-01 {
   top: 75px;
   background: #376887;
-  -webkit-animation: 3s ease-in-out second-layer infinite;
-  -khtml-animation: 3s ease-in-out second-layer infinite;
-  -moz-animation: 3s ease-in-out second-layer infinite;
-  -ms-animation: 3s ease-in-out second-layer infinite;
-  -o-animation: 3s ease-in-out second-layer infinite;
-  animation: 3s ease-in-out second-layer infinite;
+  -webkit-animation: layer-01 3s ease-in-out infinite;
+  -khtml-animation: layer-01 3s ease-in-out infinite;
+  -moz-animation: layer-01 3s ease-in-out infinite;
+  -ms-animation: layer-01 3s ease-in-out infinite;
+  -o-animation: layer-01 3s ease-in-out infinite;
+  animation: layer-01 3s ease-in-out infinite;
 }
 /* line 42, ../sass/partials/_slide-03.scss */
-#slide-03 #third-layer {
+#slide-03 #layer-02 {
   top: 50px;
   background: #4583ac;
-  -webkit-animation: 3s ease-in-out third-layer infinite;
-  -khtml-animation: 3s ease-in-out third-layer infinite;
-  -moz-animation: 3s ease-in-out third-layer infinite;
-  -ms-animation: 3s ease-in-out third-layer infinite;
-  -o-animation: 3s ease-in-out third-layer infinite;
-  animation: 3s ease-in-out third-layer infinite;
+  -webkit-animation: layer-02 3s ease-in-out infinite;
+  -khtml-animation: layer-02 3s ease-in-out infinite;
+  -moz-animation: layer-02 3s ease-in-out infinite;
+  -ms-animation: layer-02 3s ease-in-out infinite;
+  -o-animation: layer-02 3s ease-in-out infinite;
+  animation: layer-02 3s ease-in-out infinite;
 }
 /* line 48, ../sass/partials/_slide-03.scss */
-#slide-03 #fourth-layer {
+#slide-03 #layer-03 {
   top: 25px;
   background: #649cc0;
-  -webkit-animation: 3s ease-in-out fourth-layer infinite;
-  -khtml-animation: 3s ease-in-out fourth-layer infinite;
-  -moz-animation: 3s ease-in-out fourth-layer infinite;
-  -ms-animation: 3s ease-in-out fourth-layer infinite;
-  -o-animation: 3s ease-in-out fourth-layer infinite;
-  animation: 3s ease-in-out fourth-layer infinite;
+  -webkit-animation: layer-03 3s ease-in-out infinite;
+  -khtml-animation: layer-03 3s ease-in-out infinite;
+  -moz-animation: layer-03 3s ease-in-out infinite;
+  -ms-animation: layer-03 3s ease-in-out infinite;
+  -o-animation: layer-03 3s ease-in-out infinite;
+  animation: layer-03 3s ease-in-out infinite;
 }
 /* line 54, ../sass/partials/_slide-03.scss */
-#slide-03 #fifth-layer {
+#slide-03 #layer-04 {
   top: 0;
 }
 
@@ -925,12 +925,12 @@ code {
 /* line 8, ../sass/partials/_slide-04.scss */
 #slide-04 canvas {
   position: absolute;
-  -webkit-animation: 3s ease-in-out canvas-animation infinite;
-  -khtml-animation: 3s ease-in-out canvas-animation infinite;
-  -moz-animation: 3s ease-in-out canvas-animation infinite;
-  -ms-animation: 3s ease-in-out canvas-animation infinite;
-  -o-animation: 3s ease-in-out canvas-animation infinite;
-  animation: 3s ease-in-out canvas-animation infinite;
+  -webkit-animation: canvas-animation 3s ease-in-out infinite;
+  -khtml-animation: canvas-animation 3s ease-in-out infinite;
+  -moz-animation: canvas-animation 3s ease-in-out infinite;
+  -ms-animation: canvas-animation 3s ease-in-out infinite;
+  -o-animation: canvas-animation 3s ease-in-out infinite;
+  animation: canvas-animation 3s ease-in-out infinite;
 }
 
 /* line 4, ../sass/partials/_slide-05.scss */
@@ -951,21 +951,25 @@ code {
   background: #1f414e;
   color: #fff8f8;
   height: 25%;
-  padding: 4%;
   font-size: 28pt;
   font-weight: bold;
   text-align: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-/* line 33, ../sass/partials/_slide-05.scss */
+/* line 32, ../sass/partials/_slide-05.scss */
+#slide-05 .scope .scope-header .scope-header-top,
+#slide-05 .scope .scope-header .scope-header-bottom {
+  height: 35%;
+}
+/* line 37, ../sass/partials/_slide-05.scss */
 #slide-05 .scope .scope-body {
   background: #fff8f8;
   height: 75%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-/* line 42, ../sass/partials/_slide-05.scss */
+/* line 46, ../sass/partials/_slide-05.scss */
 #slide-05 .scope .scope-body .left,
 #slide-05 .scope .scope-body .center,
 #slide-05 .scope .scope-body .right {
@@ -975,7 +979,7 @@ code {
   padding: 30px;
   overflow: hidden;
 }
-/* line 51, ../sass/partials/_slide-05.scss */
+/* line 55, ../sass/partials/_slide-05.scss */
 #slide-05 .scope .scope-body .row {
   position: relative;
   background: #88b3cf;
@@ -984,7 +988,199 @@ code {
   margin-bottom: 30px;
   border-radius: 5px;
 }
-/* line 60, ../sass/partials/_slide-05.scss */
+/* line 64, ../sass/partials/_slide-05.scss */
 #slide-05 .scope .scope-body .row-75 {
   width: 75%;
+}
+
+@-webkit-keyframes packet {
+  /* line 6, ../sass/partials/_slide-06.scss */
+  0% {
+    top: 0%;
+  }
+
+  /* line 7, ../sass/partials/_slide-06.scss */
+  100% {
+    top: 100%;
+  }
+}
+
+@-moz-keyframes packet {
+  /* line 6, ../sass/partials/_slide-06.scss */
+  0% {
+    top: 0%;
+  }
+
+  /* line 7, ../sass/partials/_slide-06.scss */
+  100% {
+    top: 100%;
+  }
+}
+
+@-ms-keyframes packet {
+  /* line 6, ../sass/partials/_slide-06.scss */
+  0% {
+    top: 0%;
+  }
+
+  /* line 7, ../sass/partials/_slide-06.scss */
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes packet {
+  /* line 6, ../sass/partials/_slide-06.scss */
+  0% {
+    top: 0%;
+  }
+
+  /* line 7, ../sass/partials/_slide-06.scss */
+  100% {
+    top: 100%;
+  }
+}
+
+/* line 12, ../sass/partials/_slide-06.scss */
+#slide-06 .parent,
+#slide-06 .child {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+}
+/* line 25, ../sass/partials/_slide-06.scss */
+#slide-06 .parent {
+  background: #1f414e;
+  top: 20%;
+  left: 50%;
+}
+/* line 31, ../sass/partials/_slide-06.scss */
+#slide-06 .path {
+  position: absolute;
+  width: 8px;
+  height: 50%;
+  top: 20%;
+  left: 50%;
+  margin-left: -4px;
+  -webkit-transform-origin: 8px 0;
+  -moz-transform-origin: 8px 0;
+  -ms-transform-origin: 8px 0;
+  -o-transform-origin: 8px 0;
+  transform-origin: 8px 0;
+  background: #10222a;
+  -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+  box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
+}
+/* line 47, ../sass/partials/_slide-06.scss */
+#slide-06 .path .packet {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  margin-left: -3px;
+  border-radius: 3px;
+  background: #ffe090;
+  -webkit-box-shadow: rgba(255, 224, 144, 0.9) 0 0 16px;
+  -moz-box-shadow: rgba(255, 224, 144, 0.9) 0 0 16px;
+  box-shadow: rgba(255, 224, 144, 0.9) 0 0 16px;
+}
+/* line 63, ../sass/partials/_slide-06.scss */
+#slide-06 #packet-00 {
+  -webkit-animation: packet 3s linear infinite;
+  -khtml-animation: packet 3s linear infinite;
+  -moz-animation: packet 3s linear infinite;
+  -ms-animation: packet 3s linear infinite;
+  -o-animation: packet 3s linear infinite;
+  animation: packet 3s linear infinite;
+}
+/* line 67, ../sass/partials/_slide-06.scss */
+#slide-06 #packet-01 {
+  -webkit-animation: packet 3s 1s linear infinite;
+  -khtml-animation: packet 3s 1s linear infinite;
+  -moz-animation: packet 3s 1s linear infinite;
+  -ms-animation: packet 3s 1s linear infinite;
+  -o-animation: packet 3s 1s linear infinite;
+  animation: packet 3s 1s linear infinite;
+}
+/* line 71, ../sass/partials/_slide-06.scss */
+#slide-06 #packet-02 {
+  -webkit-animation: packet 3s 2s linear infinite;
+  -khtml-animation: packet 3s 2s linear infinite;
+  -moz-animation: packet 3s 2s linear infinite;
+  -ms-animation: packet 3s 2s linear infinite;
+  -o-animation: packet 3s 2s linear infinite;
+  animation: packet 3s 2s linear infinite;
+}
+/* line 76, ../sass/partials/_slide-06.scss */
+#slide-06 #path-00,
+#slide-06 #path-03 {
+  height: 50%;
+}
+/* line 81, ../sass/partials/_slide-06.scss */
+#slide-06 #path-01,
+#slide-06 #path-02 {
+  height: 40%;
+}
+/* line 85, ../sass/partials/_slide-06.scss */
+#slide-06 #path-00 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 86, ../sass/partials/_slide-06.scss */
+#slide-06 #path-01 {
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  -o-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+/* line 87, ../sass/partials/_slide-06.scss */
+#slide-06 #path-02 {
+  -webkit-transform: rotate(-18deg);
+  -moz-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
+  -o-transform: rotate(-18deg);
+  transform: rotate(-18deg);
+}
+/* line 88, ../sass/partials/_slide-06.scss */
+#slide-06 #path-03 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 91, ../sass/partials/_slide-06.scss */
+#slide-06 .child {
+  background: #fff8f8;
+}
+/* line 95, ../sass/partials/_slide-06.scss */
+#slide-06 #child-00 {
+  top: 55%;
+  left: 20%;
+}
+/* line 100, ../sass/partials/_slide-06.scss */
+#slide-06 #child-01 {
+  top: 55%;
+  left: 40%;
+}
+/* line 105, ../sass/partials/_slide-06.scss */
+#slide-06 #child-02 {
+  top: 55%;
+  left: 60%;
+}
+/* line 110, ../sass/partials/_slide-06.scss */
+#slide-06 #child-03 {
+  top: 55%;
+  left: 80%;
 }

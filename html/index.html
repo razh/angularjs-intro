@@ -14,10 +14,10 @@
 
     <div class="content">
       <div class="circle"></div>
-      <div class="dot" id="first-dot"></div>
-      <div class="dot" id="second-dot"></div>
-      <div class="dot" id="third-dot"></div>
-      <div class="dot" id="fourth-dot"></div>
+      <div class="dot" id="dot-00"></div>
+      <div class="dot" id="dot-01"></div>
+      <div class="dot" id="dot-02"></div>
+      <div class="dot" id="dot-03"></div>
     </div>
   </div>
 
@@ -62,11 +62,11 @@
   <div class="slide" id="slide-03">
     <span class="caption">$scope.$apply()</span>
     <div class="content">
-      <div class="layer" id="first-layer"></div>
-      <div class="layer" id="second-layer"></div>
-      <div class="layer" id="third-layer"></div>
-      <div class="layer" id="fourth-layer"></div>
-      <div class="layer" id="fifth-layer"></div>
+      <div class="layer" id="layer-00"></div>
+      <div class="layer" id="layer-01"></div>
+      <div class="layer" id="layer-02"></div>
+      <div class="layer" id="layer-03"></div>
+      <div class="layer" id="layer-04"></div>
     </div>
   </div>
 
@@ -82,7 +82,11 @@
     <div class="content">
 
       <div class="scope">
-        <div class="scope-header">Title</div>
+        <div class="scope-header">
+          <div class="scope-header-top"></div>
+          Title
+          <div class="scope-header-bottom"></div>
+        </div>
 
         <div class="scope-body">
           <div class="left">
@@ -112,9 +116,41 @@
     </div>
   </div>
 
-  <div class="slide">
+  <div class="slide" id="slide-06">
     <span class="caption">$scope.$broadcast()</span>
-    <div class="content"></div>
+    <div class="content">
+
+      <div class="path" id="path-00">
+        <div class="packet" id="packet-00"></div>
+        <div class="packet" id="packet-01"></div>
+        <div class="packet" id="packet-02"></div>
+      </div>
+
+      <div class="path" id="path-01">
+        <div class="packet" id="packet-00"></div>
+        <div class="packet" id="packet-01"></div>
+        <div class="packet" id="packet-02"></div>
+      </div>
+
+      <div class="path" id="path-02">
+        <div class="packet" id="packet-00"></div>
+        <div class="packet" id="packet-01"></div>
+        <div class="packet" id="packet-02"></div>
+      </div>
+
+      <div class="path" id="path-03">
+        <div class="packet" id="packet-00"></div>
+        <div class="packet" id="packet-01"></div>
+        <div class="packet" id="packet-02"></div>
+      </div>
+
+      <div class="parent"></div>
+
+      <div class="child" id="child-00"></div>
+      <div class="child" id="child-01"></div>
+      <div class="child" id="child-02"></div>
+      <div class="child" id="child-03"></div>
+    </div>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>

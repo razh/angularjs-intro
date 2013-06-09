@@ -39,7 +39,7 @@
     border-radius: 50%;
     border: 1px solid darken($first-color, 10%);
 
-    @include animation(1s ease first-expand infinite);
+    @include animation(first-expand 1s ease infinite);
   }
 
   .dot {
@@ -49,27 +49,27 @@
     border-radius: 50%;
   }
 
-  #first-dot {
+  #dot-00 {
     top: 10%;
     left: 20%;
-    @include animation(0.8s ease-out dot-expand infinite);
+    @include animation(dot-expand 0.8s ease-out infinite);
   }
 
-  #second-dot {
+  #dot-01 {
     top: 80%;
     left: 75%;
-    @include animation(1.5s ease-out dot-expand infinite);
+    @include animation(dot-expand 1.5s ease-out infinite);
   }
 
-  #third-dot {
+  #dot-02 {
     top: 0%;
     left: 100%;
-    @include animation(0.9s ease-out dot-expand infinite);
+    @include animation(dot-expand 0.9s ease-out infinite);
   }
 
-  #fourth-dot {
+  #dot-03 {
     top: 60%;
     left: 0%;
-    @include animation(1.2s ease-out dot-expand infinite);
+    @include animation(dot-expand 1.2s ease-out infinite);
   }
 }

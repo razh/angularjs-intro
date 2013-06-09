@@ -1,0 +1,114 @@
+$square-width: 50px;
+$packet-width: 14px;
+$path-width: 8px;
+
+@include keyframes(packet) {
+  0% { top: 0%; }
+  100% { top: 100%; }
+}
+
+#slide-06 {
+  .parent,
+  .child {
+    position: absolute;
+
+    width: $square-width;
+    height: $square-width;
+
+    margin-top: -0.5 * $square-width;
+    margin-left: -0.5 * $square-width;
+
+    border-radius: 10px;
+    @include default-box-shadow();
+  }
+
+  .parent {
+    background: darken($fourth-color, 10%);
+    top: 20%;
+    left: 50%;
+  }
+
+  .path {
+    position: absolute;
+
+    width: $path-width;
+    height: 50%;
+
+    top: 20%;
+    left: 50%;
+
+    margin-left: -0.5 * $path-width;
+    @include transform-origin($path-width, 0);
+
+    background: darken($fourth-color, 20%);
+    @include default-box-shadow();
+
+
+    .packet {
+      position: absolute;
+
+      width: $packet-width;
+      height: $packet-width;
+
+      margin-top: -0.5 * $packet-width;
+      margin-left: 0.5 * ($path-width - $packet-width);
+
+      border-radius: 3px;
+
+      background: $packet-color;
+      @include box-shadow(transparentize($packet-color, 0.1) 0 0 16px);
+    }
+  }
+
+  #packet-00 {
+    @include animation(packet 3s linear infinite);
+  }
+
+  #packet-01 {
+    @include animation(packet 3s 1s linear infinite);
+  }
+
+  #packet-02 {
+    @include animation(packet 3s 2s linear infinite);
+  }
+
+  #path-00,
+  #path-03 {
+    height: 50%;
+  }
+
+  #path-01,
+  #path-02 {
+    height: 40%;
+  }
+
+  #path-00 { @include rotate(45deg); }
+  #path-01 { @include rotate(18deg); }
+  #path-02 { @include rotate(-18deg); }
+  #path-03 { @include rotate(-45deg); }
+
+
+  .child {
+    background: $text-color;
+  }
+
+  #child-00 {
+    top: 55%;
+    left: 20%;
+  }
+
+  #child-01 {
+    top: 55%;
+    left: 40%;
+  }
+
+  #child-02 {
+    top: 55%;
+    left: 60%;
+  }
+
+  #child-03 {
+    top: 55%;
+    left: 80%;
+  }
+}

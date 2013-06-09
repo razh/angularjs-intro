@@ -6,10 +6,10 @@
   }
 }
 
-@include layer("first-layer", 100px);
-@include layer("second-layer", 75px);
-@include layer("third-layer", 50px);
-@include layer("fourth-layer", 25px);
+@include layer("layer-00", 100px);
+@include layer("layer-01", 75px);
+@include layer("layer-02", 50px);
+@include layer("layer-03", 25px);
 
 #slide-03 {
   .layer {
@@ -27,31 +27,31 @@
     @include rotate3d(1, 0, -1, 60deg);
   }
 
-  #first-layer {
+  #layer-00 {
     top: 100px;
     background: darken($third-color, 40%);
-    @include animation(3s ease-in-out first-layer infinite);
+    @include animation(layer-00 3s ease-in-out infinite);
   }
 
-  #second-layer {
+  #layer-01 {
     top: 75px;
     background: darken($third-color, 30%);
-    @include animation(3s ease-in-out second-layer infinite);
+    @include animation(layer-01 3s ease-in-out infinite);
   }
 
-  #third-layer {
+  #layer-02 {
     top: 50px;
     background: darken($third-color, 20%);
-    @include animation(3s ease-in-out third-layer infinite);
+    @include animation(layer-02 3s ease-in-out infinite);
   }
 
-  #fourth-layer {
+  #layer-03 {
     top: 25px;
     background: darken($third-color, 10%);
-    @include animation(3s ease-in-out fourth-layer infinite);
+    @include animation(layer-03 3s ease-in-out infinite);
   }
 
-  #fifth-layer {
+  #layer-04 {
     top: 0;
   }
 }

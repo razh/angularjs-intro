@@ -7,6 +7,6 @@
 #slide-04 {
   canvas {
     position: absolute;
-    @include animation(3s ease-in-out canvas-animation infinite);
+    @include animation(canvas-animation 3s ease-in-out infinite);
   }
 }

@@ -20,7 +20,6 @@ $sixth-slide-border-radius: 20px;
       color: $text-color;
 
       height: 25%;
-      padding: 4%;
 
       font-size: 28pt;
       font-weight: bold;
@@ -28,6 +27,11 @@ $sixth-slide-border-radius: 20px;
 
       border-top-left-radius: $sixth-slide-border-radius;
       border-top-right-radius: $sixth-slide-border-radius;
+
+      .scope-header-top,
+      .scope-header-bottom {
+        height: 35%;
+      }
     }
 
     .scope-body {
