@@ -384,17 +384,17 @@ code {
 /* line 2, ../sass/partials/_slide-01.scss */
 #slide-01 .scope {
   position: absolute;
-  overflow: hidden;
-  text-align: center;
-  top: 50%;
-  left: 50%;
   width: 200px;
   height: 200px;
-  margin-left: -100px;
+  top: 50%;
+  left: 50%;
   margin-top: -100px;
-  padding-top: 50px;
-  border: 5px solid #fff8f8;
+  margin-left: -100px;
   border-radius: 50%;
+  padding-top: 50px;
+  overflow: hidden;
+  text-align: center;
+  border: 5px solid #fff8f8;
   color: #fff8f8;
   text-shadow: rgba(100, 100, 100, 0.2) 2px 2px 0;
   -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
@@ -405,30 +405,31 @@ code {
 /* line 2, ../sass/partials/_slide-02.scss */
 #slide-02 .scope {
   position: absolute;
-  overflow: hidden;
-  text-align: center;
-  top: 30%;
-  left: 45%;
   width: 200px;
   height: 200px;
-  margin-left: -100px;
+  top: 50%;
+  left: 50%;
   margin-top: -100px;
-  padding-top: 50px;
+  margin-left: -100px;
   border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 50px;
   background: #fff8f8;
   color: #88b3cf;
   -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 25, ../sass/partials/_slide-02.scss */
+/* line 16, ../sass/partials/_slide-02.scss */
 #slide-02 .scope hr {
   background: #88b3cf;
   border: none;
   width: 125px;
   height: 2px;
 }
-/* line 33, ../sass/partials/_slide-02.scss */
+/* line 24, ../sass/partials/_slide-02.scss */
 #slide-02 #child-scope {
   top: 35%;
   left: 60%;
@@ -1790,13 +1791,15 @@ code {
   position: absolute;
   width: 14px;
   height: 14px;
+  top: 50%;
+  left: 50%;
   margin-top: -7px;
-  margin-left: -4px;
+  margin-left: -7px;
   border-radius: 50%;
   border: 3px solid #10222a;
   background: #ffe090;
 }
-/* line 68, ../sass/partials/_slide-06.scss */
+/* line 60, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-00 {
   -webkit-animation: packet 6s ease-in-out infinite;
   -khtml-animation: packet 6s ease-in-out infinite;
@@ -1805,7 +1808,7 @@ code {
   -o-animation: packet 6s ease-in-out infinite;
   animation: packet 6s ease-in-out infinite;
 }
-/* line 72, ../sass/partials/_slide-06.scss */
+/* line 64, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-01 {
   -webkit-animation: packet 6s 2s ease-in-out infinite;
   -khtml-animation: packet 6s 2s ease-in-out infinite;
@@ -1814,7 +1817,7 @@ code {
   -o-animation: packet 6s 2s ease-in-out infinite;
   animation: packet 6s 2s ease-in-out infinite;
 }
-/* line 76, ../sass/partials/_slide-06.scss */
+/* line 68, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-02 {
   -webkit-animation: packet 6s 4s ease-in-out infinite;
   -khtml-animation: packet 6s 4s ease-in-out infinite;
@@ -1823,17 +1826,17 @@ code {
   -o-animation: packet 6s 4s ease-in-out infinite;
   animation: packet 6s 4s ease-in-out infinite;
 }
-/* line 81, ../sass/partials/_slide-06.scss */
+/* line 73, ../sass/partials/_slide-06.scss */
 #slide-06 #path-00,
 #slide-06 #path-03 {
   height: 50%;
 }
-/* line 86, ../sass/partials/_slide-06.scss */
+/* line 78, ../sass/partials/_slide-06.scss */
 #slide-06 #path-01,
 #slide-06 #path-02 {
   height: 40%;
 }
-/* line 90, ../sass/partials/_slide-06.scss */
+/* line 82, ../sass/partials/_slide-06.scss */
 #slide-06 #path-00 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1841,7 +1844,7 @@ code {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 91, ../sass/partials/_slide-06.scss */
+/* line 83, ../sass/partials/_slide-06.scss */
 #slide-06 #path-01 {
   -webkit-transform: rotate(18deg);
   -moz-transform: rotate(18deg);
@@ -1849,7 +1852,7 @@ code {
   -o-transform: rotate(18deg);
   transform: rotate(18deg);
 }
-/* line 92, ../sass/partials/_slide-06.scss */
+/* line 84, ../sass/partials/_slide-06.scss */
 #slide-06 #path-02 {
   -webkit-transform: rotate(-18deg);
   -moz-transform: rotate(-18deg);
@@ -1857,7 +1860,7 @@ code {
   -o-transform: rotate(-18deg);
   transform: rotate(-18deg);
 }
-/* line 93, ../sass/partials/_slide-06.scss */
+/* line 85, ../sass/partials/_slide-06.scss */
 #slide-06 #path-03 {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1865,7 +1868,7 @@ code {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 95, ../sass/partials/_slide-06.scss */
+/* line 87, ../sass/partials/_slide-06.scss */
 #slide-06 .child {
   background: #fff8f8;
   top: 100%;
@@ -1873,7 +1876,7 @@ code {
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 101, ../sass/partials/_slide-06.scss */
+/* line 93, ../sass/partials/_slide-06.scss */
 #slide-06 #child-00 {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1881,7 +1884,7 @@ code {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 102, ../sass/partials/_slide-06.scss */
+/* line 94, ../sass/partials/_slide-06.scss */
 #slide-06 #child-01 {
   -webkit-transform: rotate(-18deg);
   -moz-transform: rotate(-18deg);
@@ -1889,7 +1892,7 @@ code {
   -o-transform: rotate(-18deg);
   transform: rotate(-18deg);
 }
-/* line 103, ../sass/partials/_slide-06.scss */
+/* line 95, ../sass/partials/_slide-06.scss */
 #slide-06 #child-02 {
   -webkit-transform: rotate(18deg);
   -moz-transform: rotate(18deg);
@@ -1897,11 +1900,146 @@ code {
   -o-transform: rotate(18deg);
   transform: rotate(18deg);
 }
-/* line 104, ../sass/partials/_slide-06.scss */
+/* line 96, ../sass/partials/_slide-06.scss */
 #slide-06 #child-03 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@-webkit-keyframes moon-orbit {
+  /* line 5, ../sass/partials/_slide-07.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg) translateX(150px);
+    -moz-transform: rotateZ(0deg) translateX(150px);
+    -ms-transform: rotateZ(0deg) translateX(150px);
+    -o-transform: rotateZ(0deg) translateX(150px);
+    transform: rotateZ(0deg) translateX(150px);
+  }
+
+  /* line 6, ../sass/partials/_slide-07.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg) translateX(150px);
+    -moz-transform: rotateZ(360deg) translateX(150px);
+    -ms-transform: rotateZ(360deg) translateX(150px);
+    -o-transform: rotateZ(360deg) translateX(150px);
+    transform: rotateZ(360deg) translateX(150px);
+  }
+}
+
+@-moz-keyframes moon-orbit {
+  /* line 5, ../sass/partials/_slide-07.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg) translateX(150px);
+    -moz-transform: rotateZ(0deg) translateX(150px);
+    -ms-transform: rotateZ(0deg) translateX(150px);
+    -o-transform: rotateZ(0deg) translateX(150px);
+    transform: rotateZ(0deg) translateX(150px);
+  }
+
+  /* line 6, ../sass/partials/_slide-07.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg) translateX(150px);
+    -moz-transform: rotateZ(360deg) translateX(150px);
+    -ms-transform: rotateZ(360deg) translateX(150px);
+    -o-transform: rotateZ(360deg) translateX(150px);
+    transform: rotateZ(360deg) translateX(150px);
+  }
+}
+
+@-ms-keyframes moon-orbit {
+  /* line 5, ../sass/partials/_slide-07.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg) translateX(150px);
+    -moz-transform: rotateZ(0deg) translateX(150px);
+    -ms-transform: rotateZ(0deg) translateX(150px);
+    -o-transform: rotateZ(0deg) translateX(150px);
+    transform: rotateZ(0deg) translateX(150px);
+  }
+
+  /* line 6, ../sass/partials/_slide-07.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg) translateX(150px);
+    -moz-transform: rotateZ(360deg) translateX(150px);
+    -ms-transform: rotateZ(360deg) translateX(150px);
+    -o-transform: rotateZ(360deg) translateX(150px);
+    transform: rotateZ(360deg) translateX(150px);
+  }
+}
+
+@keyframes moon-orbit {
+  /* line 5, ../sass/partials/_slide-07.scss */
+  0% {
+    -webkit-transform: rotateZ(0deg) translateX(150px);
+    -moz-transform: rotateZ(0deg) translateX(150px);
+    -ms-transform: rotateZ(0deg) translateX(150px);
+    -o-transform: rotateZ(0deg) translateX(150px);
+    transform: rotateZ(0deg) translateX(150px);
+  }
+
+  /* line 6, ../sass/partials/_slide-07.scss */
+  100% {
+    -webkit-transform: rotateZ(360deg) translateX(150px);
+    -moz-transform: rotateZ(360deg) translateX(150px);
+    -ms-transform: rotateZ(360deg) translateX(150px);
+    -o-transform: rotateZ(360deg) translateX(150px);
+    transform: rotateZ(360deg) translateX(150px);
+  }
+}
+
+/* line 10, ../sass/partials/_slide-07.scss */
+#slide-07 .system {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+/* line 15, ../sass/partials/_slide-07.scss */
+#slide-07 .system .planet {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  border-radius: 50%;
+  background: #88b3cf;
+  border: 10px solid #d1e1ec;
+}
+/* line 22, ../sass/partials/_slide-07.scss */
+#slide-07 .system .orbit {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+/* line 28, ../sass/partials/_slide-07.scss */
+#slide-07 .system .moon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  border-radius: 50%;
+  -webkit-animation: moon-orbit 3s linear infinite;
+  -khtml-animation: moon-orbit 3s linear infinite;
+  -moz-animation: moon-orbit 3s linear infinite;
+  -ms-animation: moon-orbit 3s linear infinite;
+  -o-animation: moon-orbit 3s linear infinite;
+  animation: moon-orbit 3s linear infinite;
+  background: #ffc1b3;
+  border: 3px solid white;
 }

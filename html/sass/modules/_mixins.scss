@@ -20,3 +20,18 @@
   @include box-shadow($shadow-color 3px 3px 2px,
                       $shadow-color 0 0 3px);
 }
+
+@mixin circle($radius) {
+  position: absolute;
+
+  width: $radius;
+  height: $radius;
+
+  top: 50%;
+  left: 50%;
+
+  margin-top: -0.5 * $radius;
+  margin-left: -0.5 * $radius;
+
+  border-radius: 50%;
+}

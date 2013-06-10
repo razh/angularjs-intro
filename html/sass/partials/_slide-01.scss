@@ -1,22 +1,13 @@
 #slide-01 {
   .scope {
-    position: absolute;
-    overflow: hidden;
-    text-align: center;
-
-    top: 50%;
-    left: 50%;
-
-    width: 200px;
-    height: 200px;
-
-    margin-left: -100px;
-    margin-top: -100px;
+    @include circle($default-circle-radius);
 
     padding-top: 50px;
 
+    overflow: hidden;
+    text-align: center;
+
     border: 5px solid $text-color;
-    border-radius: 50%;
 
     color: $text-color;
     @include text-shadow($shadow-color 2px 2px 0);

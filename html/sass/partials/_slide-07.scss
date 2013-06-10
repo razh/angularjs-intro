@@ -1,0 +1,36 @@
+$slide-07-planet-radius: 150px;
+$slide-07-moon-radius: 30px;
+
+@include keyframes(moon-orbit) {
+  0% { @include transform(rotateZ(0deg) translateX($slide-07-planet-radius) ); }
+  100% { @include transform(rotateZ(360deg) translateX($slide-07-planet-radius) ); }
+}
+
+#slide-07 {
+  .system {
+    @include perspective(1000px);
+    width: 100%;
+    height: 100%;
+
+    .planet {
+      @include circle($slide-07-planet-radius);
+
+      background: $third-color;
+      border: 10px solid lighten($third-color, 20%);
+    }
+
+    .orbit {
+      @include circle(2 * $slide-07-planet-radius);
+
+      border: 2px solid white;
+    }
+
+    .moon {
+      @include circle($slide-07-moon-radius);
+      @include animation(moon-orbit 3s linear infinite);
+
+      background: $second-color;
+      border: 3px solid lighten($second-color, 20%);
+    }
+  }
+}

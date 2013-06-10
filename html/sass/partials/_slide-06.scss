@@ -50,17 +50,9 @@ $slide-06-second-row: 55%;
 
 
     .packet {
-      position: absolute;
+      @include circle($packet-width);
 
-      width: $packet-width;
-      height: $packet-width;
-
-      margin-top: -0.5 * $packet-width;
-      margin-left: 0.5 * ($path-width - $packet-width);
-
-      border-radius: 50%;
       border: 0.5 * $path-width solid $slide-06-darker-shade;
-
       background: $packet-color;
     }
   }
