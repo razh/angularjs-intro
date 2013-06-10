@@ -1,12 +1,71 @@
+$slide-04-circle-width: 100px;
+$slide-04-path-width: 4px;
+
+$slide-04-perspective: 100px;
+
 @include keyframes(canvas-animation) {
   0% { @include rotate3d(1, 0, 1, 0deg); }
   50% { @include rotate3d(1, 0, 1, 90deg); }
   100% { @include rotate3d(1, 0, 1, 0deg); }
 }
 
+@include keyframes(test) {
+  0% { @include rotateY(60deg); }
+  50% { @include rotateY(-60deg); }
+  100% { @include rotateY(60deg); }
+}
+
 #slide-04 {
   canvas {
     position: absolute;
     @include animation(canvas-animation 3s ease-in-out infinite);
+  }
+
+  .container {
+    width: 100px;
+    margin-left: -0.5 * $slide-04-circle-width;
+    @include animation(test 4s linear infinite);
+    // @include perspective($slide-04-perspective);
+    // @include perspective-origin(50% 15%);
+    // @include transform(translateY(-100px));
+    @include transform(perspective($slide-04-perspective) perspective-origin(50% 15%));
+    @include transform-style(preserve-3d);
+  }
+
+  #group-00 {
+    // background: red;
+  }
+
+  #group-01 {
+    @include transform(rotateX(60deg));
+    @include transform-origin(50%, 0);
+    // background: blue;
+  }
+
+  .circle {
+    background: $second-color;
+    border-radius: 50%;
+
+    width: $slide-04-circle-width;
+    height: $slide-04-circle-width;
+  }
+
+  .path {
+    position: relative;
+    background: $second-color;
+
+    width: $slide-04-path-width;
+    height: 2 * $slide-04-circle-width;
+
+    margin-left: 0.5 * ($slide-04-circle-width - $slide-04-path-width);
+  }
+
+
+  #path-01 {
+    // @include transform-origin(50%, 0);
+    // @include perspective-origin(40% 20%);
+    //@include transform(rotate3d(1, 1, 0, 50deg));
+    // @include transform(rotate3d(1, 0, 0, -90deg), scale(40%, 20%));
+    // @include rotateX(-80deg, 500px);
   }
 }

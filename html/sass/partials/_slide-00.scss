@@ -22,8 +22,7 @@ $dark-shade-00: darken($first-color, 10%);
 
 @include keyframes(dot-expand) {
   0% { width: 10px; height: 10px; margin-top: -5px; margin-left: -5px; background: rgba($dark-shade-00, 1.0); }
-  50% { width: 60px; height: 60px; margin-top: -30px; margin-left: -30px; background: rgba($dark-shade-00, 0.0); }
-  100% { width: 10px; height: 10px; margin-top: -5px; margin-left: -5px; background: rgba($dark-shade-00, 1.0); }
+  100% { width: 60px; height: 60px; margin-top: -30px; margin-left: -30px; background: rgba($dark-shade-00, 0.0); }
 }
 
 #slide-00 {

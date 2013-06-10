@@ -243,21 +243,12 @@ code {
   }
 
   /* line 25, ../sass/partials/_slide-00.scss */
-  50% {
+  100% {
     width: 60px;
     height: 60px;
     margin-top: -30px;
     margin-left: -30px;
     background: rgba(227, 71, 69, 0);
-  }
-
-  /* line 26, ../sass/partials/_slide-00.scss */
-  100% {
-    width: 10px;
-    height: 10px;
-    margin-top: -5px;
-    margin-left: -5px;
-    background: #e34745;
   }
 }
 
@@ -272,21 +263,12 @@ code {
   }
 
   /* line 25, ../sass/partials/_slide-00.scss */
-  50% {
+  100% {
     width: 60px;
     height: 60px;
     margin-top: -30px;
     margin-left: -30px;
     background: rgba(227, 71, 69, 0);
-  }
-
-  /* line 26, ../sass/partials/_slide-00.scss */
-  100% {
-    width: 10px;
-    height: 10px;
-    margin-top: -5px;
-    margin-left: -5px;
-    background: #e34745;
   }
 }
 
@@ -301,21 +283,12 @@ code {
   }
 
   /* line 25, ../sass/partials/_slide-00.scss */
-  50% {
+  100% {
     width: 60px;
     height: 60px;
     margin-top: -30px;
     margin-left: -30px;
     background: rgba(227, 71, 69, 0);
-  }
-
-  /* line 26, ../sass/partials/_slide-00.scss */
-  100% {
-    width: 10px;
-    height: 10px;
-    margin-top: -5px;
-    margin-left: -5px;
-    background: #e34745;
   }
 }
 
@@ -330,25 +303,16 @@ code {
   }
 
   /* line 25, ../sass/partials/_slide-00.scss */
-  50% {
+  100% {
     width: 60px;
     height: 60px;
     margin-top: -30px;
     margin-left: -30px;
     background: rgba(227, 71, 69, 0);
   }
-
-  /* line 26, ../sass/partials/_slide-00.scss */
-  100% {
-    width: 10px;
-    height: 10px;
-    margin-top: -5px;
-    margin-left: -5px;
-    background: #e34745;
-  }
 }
 
-/* line 30, ../sass/partials/_slide-00.scss */
+/* line 29, ../sass/partials/_slide-00.scss */
 #slide-00 .circle {
   position: absolute;
   width: 100px;
@@ -366,13 +330,13 @@ code {
   -o-animation: first-expand 1s ease infinite;
   animation: first-expand 1s ease infinite;
 }
-/* line 47, ../sass/partials/_slide-00.scss */
+/* line 46, ../sass/partials/_slide-00.scss */
 #slide-00 .dot {
   position: absolute;
   background: #e34745;
   border-radius: 50%;
 }
-/* line 54, ../sass/partials/_slide-00.scss */
+/* line 53, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-00 {
   top: 10%;
   left: 20%;
@@ -383,7 +347,7 @@ code {
   -o-animation: dot-expand 0.8s ease-out infinite;
   animation: dot-expand 0.8s ease-out infinite;
 }
-/* line 60, ../sass/partials/_slide-00.scss */
+/* line 59, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-01 {
   top: 80%;
   left: 75%;
@@ -394,7 +358,7 @@ code {
   -o-animation: dot-expand 1.5s ease-out infinite;
   animation: dot-expand 1.5s ease-out infinite;
 }
-/* line 66, ../sass/partials/_slide-00.scss */
+/* line 65, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-02 {
   top: 0%;
   left: 100%;
@@ -405,7 +369,7 @@ code {
   -o-animation: dot-expand 0.9s ease-out infinite;
   animation: dot-expand 0.9s ease-out infinite;
 }
-/* line 72, ../sass/partials/_slide-00.scss */
+/* line 71, ../sass/partials/_slide-00.scss */
 #slide-00 #dot-03 {
   top: 60%;
   left: 0%;
@@ -807,7 +771,7 @@ code {
 }
 
 @-webkit-keyframes canvas-animation {
-  /* line 2, ../sass/partials/_slide-04.scss */
+  /* line 7, ../sass/partials/_slide-04.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -816,7 +780,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 3, ../sass/partials/_slide-04.scss */
+  /* line 8, ../sass/partials/_slide-04.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -825,7 +789,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 4, ../sass/partials/_slide-04.scss */
+  /* line 9, ../sass/partials/_slide-04.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -836,7 +800,7 @@ code {
 }
 
 @-moz-keyframes canvas-animation {
-  /* line 2, ../sass/partials/_slide-04.scss */
+  /* line 7, ../sass/partials/_slide-04.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -845,7 +809,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 3, ../sass/partials/_slide-04.scss */
+  /* line 8, ../sass/partials/_slide-04.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -854,7 +818,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 4, ../sass/partials/_slide-04.scss */
+  /* line 9, ../sass/partials/_slide-04.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -865,7 +829,7 @@ code {
 }
 
 @-ms-keyframes canvas-animation {
-  /* line 2, ../sass/partials/_slide-04.scss */
+  /* line 7, ../sass/partials/_slide-04.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -874,7 +838,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 3, ../sass/partials/_slide-04.scss */
+  /* line 8, ../sass/partials/_slide-04.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -883,7 +847,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 4, ../sass/partials/_slide-04.scss */
+  /* line 9, ../sass/partials/_slide-04.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -894,7 +858,7 @@ code {
 }
 
 @keyframes canvas-animation {
-  /* line 2, ../sass/partials/_slide-04.scss */
+  /* line 7, ../sass/partials/_slide-04.scss */
   0% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -903,7 +867,7 @@ code {
     transform: rotate3d(1, 0, 1, 0deg);
   }
 
-  /* line 3, ../sass/partials/_slide-04.scss */
+  /* line 8, ../sass/partials/_slide-04.scss */
   50% {
     -webkit-transform: rotate3d(1, 0, 1, 90deg);
     -moz-transform: rotate3d(1, 0, 1, 90deg);
@@ -912,7 +876,7 @@ code {
     transform: rotate3d(1, 0, 1, 90deg);
   }
 
-  /* line 4, ../sass/partials/_slide-04.scss */
+  /* line 9, ../sass/partials/_slide-04.scss */
   100% {
     -webkit-transform: rotate3d(1, 0, 1, 0deg);
     -moz-transform: rotate3d(1, 0, 1, 0deg);
@@ -922,7 +886,123 @@ code {
   }
 }
 
-/* line 8, ../sass/partials/_slide-04.scss */
+@-webkit-keyframes test {
+  /* line 13, ../sass/partials/_slide-04.scss */
+  0% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+
+  /* line 14, ../sass/partials/_slide-04.scss */
+  50% {
+    -webkit-transform: rotateY(-60deg);
+    -moz-transform: rotateY(-60deg);
+    -ms-transform: rotateY(-60deg);
+    -o-transform: rotateY(-60deg);
+    transform: rotateY(-60deg);
+  }
+
+  /* line 15, ../sass/partials/_slide-04.scss */
+  100% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+}
+
+@-moz-keyframes test {
+  /* line 13, ../sass/partials/_slide-04.scss */
+  0% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+
+  /* line 14, ../sass/partials/_slide-04.scss */
+  50% {
+    -webkit-transform: rotateY(-60deg);
+    -moz-transform: rotateY(-60deg);
+    -ms-transform: rotateY(-60deg);
+    -o-transform: rotateY(-60deg);
+    transform: rotateY(-60deg);
+  }
+
+  /* line 15, ../sass/partials/_slide-04.scss */
+  100% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+}
+
+@-ms-keyframes test {
+  /* line 13, ../sass/partials/_slide-04.scss */
+  0% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+
+  /* line 14, ../sass/partials/_slide-04.scss */
+  50% {
+    -webkit-transform: rotateY(-60deg);
+    -moz-transform: rotateY(-60deg);
+    -ms-transform: rotateY(-60deg);
+    -o-transform: rotateY(-60deg);
+    transform: rotateY(-60deg);
+  }
+
+  /* line 15, ../sass/partials/_slide-04.scss */
+  100% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+}
+
+@keyframes test {
+  /* line 13, ../sass/partials/_slide-04.scss */
+  0% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+
+  /* line 14, ../sass/partials/_slide-04.scss */
+  50% {
+    -webkit-transform: rotateY(-60deg);
+    -moz-transform: rotateY(-60deg);
+    -ms-transform: rotateY(-60deg);
+    -o-transform: rotateY(-60deg);
+    transform: rotateY(-60deg);
+  }
+
+  /* line 15, ../sass/partials/_slide-04.scss */
+  100% {
+    -webkit-transform: rotateY(60deg);
+    -moz-transform: rotateY(60deg);
+    -ms-transform: rotateY(60deg);
+    -o-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+  }
+}
+
+/* line 19, ../sass/partials/_slide-04.scss */
 #slide-04 canvas {
   position: absolute;
   -webkit-animation: canvas-animation 3s ease-in-out infinite;
@@ -931,6 +1011,55 @@ code {
   -ms-animation: canvas-animation 3s ease-in-out infinite;
   -o-animation: canvas-animation 3s ease-in-out infinite;
   animation: canvas-animation 3s ease-in-out infinite;
+}
+/* line 24, ../sass/partials/_slide-04.scss */
+#slide-04 .container {
+  width: 100px;
+  margin-left: -50px;
+  -webkit-animation: test 4s linear infinite;
+  -khtml-animation: test 4s linear infinite;
+  -moz-animation: test 4s linear infinite;
+  -ms-animation: test 4s linear infinite;
+  -o-animation: test 4s linear infinite;
+  animation: test 4s linear infinite;
+  -webkit-transform: perspective(100px) perspective-origin(50% 15%);
+  -moz-transform: perspective(100px) perspective-origin(50% 15%);
+  -ms-transform: perspective(100px) perspective-origin(50% 15%);
+  -o-transform: perspective(100px) perspective-origin(50% 15%);
+  transform: perspective(100px) perspective-origin(50% 15%);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 39, ../sass/partials/_slide-04.scss */
+#slide-04 #group-01 {
+  -webkit-transform: rotateX(60deg);
+  -moz-transform: rotateX(60deg);
+  -ms-transform: rotateX(60deg);
+  -o-transform: rotateX(60deg);
+  transform: rotateX(60deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+/* line 45, ../sass/partials/_slide-04.scss */
+#slide-04 .circle {
+  background: #ffc1b3;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+/* line 53, ../sass/partials/_slide-04.scss */
+#slide-04 .path {
+  position: relative;
+  background: #ffc1b3;
+  width: 4px;
+  height: 200px;
+  margin-left: 48px;
 }
 
 /* line 4, ../sass/partials/_slide-05.scss */
