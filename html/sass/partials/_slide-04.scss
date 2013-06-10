@@ -1,18 +1,21 @@
-$slide-04-circle-width: 100px;
-$slide-04-path-width: 4px;
-
-$slide-04-perspective: 100px;
-
 @include keyframes(canvas-animation) {
   0% { @include rotate3d(1, 0, 1, 0deg); }
   50% { @include rotate3d(1, 0, 1, 90deg); }
   100% { @include rotate3d(1, 0, 1, 0deg); }
 }
 
-@include keyframes(test) {
-  0% { @include rotateY(60deg); }
-  50% { @include rotateY(-60deg); }
-  100% { @include rotateY(60deg); }
+$face-count: 8;
+
+$face-width: 100px;
+$face-height: 200px;
+
+$face-perspective: 1000px;
+
+@for $index from 0 to $face-count {
+  @include keyframes(face-animation-0#{$index}) {
+    0% { @include rotateY($index / $face-count * 360deg); }
+    100% { @include rotateY($index / $face-count * 360deg + 360deg); }
+  }
 }
 
 #slide-04 {
@@ -22,50 +25,35 @@ $slide-04-perspective: 100px;
   }
 
   .container {
-    width: 100px;
-    margin-left: -0.5 * $slide-04-circle-width;
-    @include animation(test 4s linear infinite);
-    // @include perspective($slide-04-perspective);
-    // @include perspective-origin(50% 15%);
-    // @include transform(translateY(-100px));
-    @include transform(perspective($slide-04-perspective) perspective-origin(50% 15%));
-    @include transform-style(preserve-3d);
-  }
+    position: absolute;
 
-  #group-00 {
-    // background: red;
-  }
+    width: 100%;
+    height: 100%;
 
-  #group-01 {
-    @include transform(rotateX(60deg));
-    @include transform-origin(50%, 0);
-    // background: blue;
-  }
+    @include perspective($face-perspective);
+    @include perspective-origin(50% 75%);
 
-  .circle {
-    background: $second-color;
-    border-radius: 50%;
+    .face {
+      position: absolute;
+      width: $face-width;
+      height: $face-height;
 
-    width: $slide-04-circle-width;
-    height: $slide-04-circle-width;
-  }
+      top: 50%;
+      left: 50%;
 
-  .path {
-    position: relative;
-    background: $second-color;
+      margin-top: -0.5 * $face-height;
+      margin-left: -0.5 * $face-width;
+      @include transform-origin(50%, 50%, $face-height);
 
-    width: $slide-04-path-width;
-    height: 2 * $slide-04-circle-width;
-
-    margin-left: 0.5 * ($slide-04-circle-width - $slide-04-path-width);
-  }
+      border-radius: 20px;
+      background: rgba(darken($first-color, 20%), 0.5);
+    }
 
 
-  #path-01 {
-    // @include transform-origin(50%, 0);
-    // @include perspective-origin(40% 20%);
-    //@include transform(rotate3d(1, 1, 0, 50deg));
-    // @include transform(rotate3d(1, 0, 0, -90deg), scale(40%, 20%));
-    // @include rotateX(-80deg, 500px);
+    @for $index from 0 to $face-count {
+      #face-0#{$index} {
+        @include animation(face-animation-0#{$index} 10s linear infinite);
+      }
+    }
   }
 }
