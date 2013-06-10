@@ -1775,11 +1775,11 @@ code {
   top: 20%;
   left: 50%;
   margin-left: -3px;
-  -webkit-transform-origin: 6px 0;
-  -moz-transform-origin: 6px 0;
-  -ms-transform-origin: 6px 0;
-  -o-transform-origin: 6px 0;
-  transform-origin: 6px 0;
+  -webkit-transform-origin: 3px 0;
+  -moz-transform-origin: 3px 0;
+  -ms-transform-origin: 3px 0;
+  -o-transform-origin: 3px 0;
+  transform-origin: 3px 0;
   background: #10222a;
   -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
@@ -1868,27 +1868,40 @@ code {
 /* line 95, ../sass/partials/_slide-06.scss */
 #slide-06 .child {
   background: #fff8f8;
+  top: 100%;
   -webkit-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 100, ../sass/partials/_slide-06.scss */
+/* line 101, ../sass/partials/_slide-06.scss */
 #slide-06 #child-00 {
-  top: 55%;
-  left: 20%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-/* line 105, ../sass/partials/_slide-06.scss */
+/* line 102, ../sass/partials/_slide-06.scss */
 #slide-06 #child-01 {
-  top: 55%;
-  left: 40%;
+  -webkit-transform: rotate(-18deg);
+  -moz-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
+  -o-transform: rotate(-18deg);
+  transform: rotate(-18deg);
 }
-/* line 110, ../sass/partials/_slide-06.scss */
+/* line 103, ../sass/partials/_slide-06.scss */
 #slide-06 #child-02 {
-  top: 55%;
-  left: 60%;
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  -o-transform: rotate(18deg);
+  transform: rotate(18deg);
 }
-/* line 115, ../sass/partials/_slide-06.scss */
+/* line 104, ../sass/partials/_slide-06.scss */
 #slide-06 #child-03 {
-  top: 55%;
-  left: 80%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

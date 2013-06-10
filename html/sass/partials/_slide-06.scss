@@ -43,7 +43,7 @@ $slide-06-second-row: 55%;
     left: 50%;
 
     margin-left: -0.5 * $path-width;
-    @include transform-origin($path-width, 0);
+    @include transform-origin(0.5 * $path-width, 0);
 
     background: $slide-06-darker-shade;
     @include default-box-shadow();
@@ -94,26 +94,12 @@ $slide-06-second-row: 55%;
 
   .child {
     background: $text-color;
+    top: 100%;
     @include default-box-shadow();
   }
 
-  #child-00 {
-    top: $slide-06-second-row;
-    left: 20%;
-  }
-
-  #child-01 {
-    top: $slide-06-second-row;
-    left: 40%;
-  }
-
-  #child-02 {
-    top: $slide-06-second-row;
-    left: 60%;
-  }
-
-  #child-03 {
-    top: $slide-06-second-row;
-    left: 80%;
-  }
+  #child-00 { @include rotate(-45deg); }
+  #child-01 { @include rotate(-18deg); }
+  #child-02 { @include rotate(18deg); }
+  #child-03 { @include rotate(45deg); }
 }
