@@ -1,4 +1,4 @@
-$sixth-slide-border-radius: 20px;
+$s05-border-radius: 20px;
 
 #slide-05 {
   .scope {
@@ -9,7 +9,7 @@ $sixth-slide-border-radius: 20px;
     margin-top: 20px;
     margin-left: 20px;
 
-    border-radius: $sixth-slide-border-radius;
+    border-radius: $s05-border-radius;
     @include box-shadow($shadow-color 6px 6px 0,
                         $shadow-color 0 0 6px);
 
@@ -25,8 +25,8 @@ $sixth-slide-border-radius: 20px;
       font-weight: bold;
       text-align: center;
 
-      border-top-left-radius: $sixth-slide-border-radius;
-      border-top-right-radius: $sixth-slide-border-radius;
+      border-top-left-radius: $s05-border-radius;
+      border-top-right-radius: $s05-border-radius;
 
       .scope-header-top,
       .scope-header-bottom {
@@ -38,8 +38,8 @@ $sixth-slide-border-radius: 20px;
       background: $text-color;
       height: 75%;
 
-      border-bottom-left-radius: $sixth-slide-border-radius;
-      border-bottom-right-radius: $sixth-slide-border-radius;
+      border-bottom-left-radius: $s05-border-radius;
+      border-bottom-right-radius: $s05-border-radius;
 
       .left,
       .center,

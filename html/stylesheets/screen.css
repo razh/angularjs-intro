@@ -1704,54 +1704,54 @@ code {
 }
 
 @-webkit-keyframes packet {
-  /* line 11, ../sass/partials/_slide-06.scss */
+  /* line 9, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 12, ../sass/partials/_slide-06.scss */
+  /* line 10, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
 @-moz-keyframes packet {
-  /* line 11, ../sass/partials/_slide-06.scss */
+  /* line 9, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 12, ../sass/partials/_slide-06.scss */
+  /* line 10, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
 @-ms-keyframes packet {
-  /* line 11, ../sass/partials/_slide-06.scss */
+  /* line 9, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 12, ../sass/partials/_slide-06.scss */
+  /* line 10, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
 @keyframes packet {
-  /* line 11, ../sass/partials/_slide-06.scss */
+  /* line 9, ../sass/partials/_slide-06.scss */
   0% {
     top: 0%;
   }
 
-  /* line 12, ../sass/partials/_slide-06.scss */
+  /* line 10, ../sass/partials/_slide-06.scss */
   100% {
     top: 100%;
   }
 }
 
-/* line 17, ../sass/partials/_slide-06.scss */
+/* line 15, ../sass/partials/_slide-06.scss */
 #slide-06 .parent,
 #slide-06 .child {
   position: absolute;
@@ -1762,13 +1762,13 @@ code {
   border-radius: 12px;
   border: 6px solid #10222a;
 }
-/* line 30, ../sass/partials/_slide-06.scss */
+/* line 28, ../sass/partials/_slide-06.scss */
 #slide-06 .parent {
   background: #1f414e;
   top: 20%;
   left: 50%;
 }
-/* line 36, ../sass/partials/_slide-06.scss */
+/* line 34, ../sass/partials/_slide-06.scss */
 #slide-06 .path {
   position: absolute;
   width: 6px;
@@ -1786,7 +1786,7 @@ code {
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 52, ../sass/partials/_slide-06.scss */
+/* line 50, ../sass/partials/_slide-06.scss */
 #slide-06 .path .packet {
   position: absolute;
   width: 14px;
@@ -1796,10 +1796,11 @@ code {
   margin-top: -7px;
   margin-left: -7px;
   border-radius: 50%;
+  top: 0%;
   border: 3px solid #10222a;
   background: #ffe090;
 }
-/* line 60, ../sass/partials/_slide-06.scss */
+/* line 59, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-00 {
   -webkit-animation: packet 6s ease-in-out infinite;
   -khtml-animation: packet 6s ease-in-out infinite;
@@ -1808,7 +1809,7 @@ code {
   -o-animation: packet 6s ease-in-out infinite;
   animation: packet 6s ease-in-out infinite;
 }
-/* line 64, ../sass/partials/_slide-06.scss */
+/* line 63, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-01 {
   -webkit-animation: packet 6s 2s ease-in-out infinite;
   -khtml-animation: packet 6s 2s ease-in-out infinite;
@@ -1817,7 +1818,7 @@ code {
   -o-animation: packet 6s 2s ease-in-out infinite;
   animation: packet 6s 2s ease-in-out infinite;
 }
-/* line 68, ../sass/partials/_slide-06.scss */
+/* line 67, ../sass/partials/_slide-06.scss */
 #slide-06 #packet-02 {
   -webkit-animation: packet 6s 4s ease-in-out infinite;
   -khtml-animation: packet 6s 4s ease-in-out infinite;
@@ -1826,17 +1827,17 @@ code {
   -o-animation: packet 6s 4s ease-in-out infinite;
   animation: packet 6s 4s ease-in-out infinite;
 }
-/* line 73, ../sass/partials/_slide-06.scss */
+/* line 72, ../sass/partials/_slide-06.scss */
 #slide-06 #path-00,
 #slide-06 #path-03 {
   height: 50%;
 }
-/* line 78, ../sass/partials/_slide-06.scss */
+/* line 77, ../sass/partials/_slide-06.scss */
 #slide-06 #path-01,
 #slide-06 #path-02 {
   height: 40%;
 }
-/* line 82, ../sass/partials/_slide-06.scss */
+/* line 81, ../sass/partials/_slide-06.scss */
 #slide-06 #path-00 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1844,7 +1845,7 @@ code {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 83, ../sass/partials/_slide-06.scss */
+/* line 82, ../sass/partials/_slide-06.scss */
 #slide-06 #path-01 {
   -webkit-transform: rotate(18deg);
   -moz-transform: rotate(18deg);
@@ -1852,7 +1853,7 @@ code {
   -o-transform: rotate(18deg);
   transform: rotate(18deg);
 }
-/* line 84, ../sass/partials/_slide-06.scss */
+/* line 83, ../sass/partials/_slide-06.scss */
 #slide-06 #path-02 {
   -webkit-transform: rotate(-18deg);
   -moz-transform: rotate(-18deg);
@@ -1860,7 +1861,7 @@ code {
   -o-transform: rotate(-18deg);
   transform: rotate(-18deg);
 }
-/* line 85, ../sass/partials/_slide-06.scss */
+/* line 84, ../sass/partials/_slide-06.scss */
 #slide-06 #path-03 {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1868,7 +1869,7 @@ code {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 87, ../sass/partials/_slide-06.scss */
+/* line 86, ../sass/partials/_slide-06.scss */
 #slide-06 .child {
   background: #fff8f8;
   top: 100%;
@@ -1876,7 +1877,7 @@ code {
   -moz-box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
   box-shadow: rgba(100, 100, 100, 0.2) 3px 3px 2px, rgba(100, 100, 100, 0.2) 0 0 3px;
 }
-/* line 93, ../sass/partials/_slide-06.scss */
+/* line 92, ../sass/partials/_slide-06.scss */
 #slide-06 #child-00 {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1884,7 +1885,7 @@ code {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 94, ../sass/partials/_slide-06.scss */
+/* line 93, ../sass/partials/_slide-06.scss */
 #slide-06 #child-01 {
   -webkit-transform: rotate(-18deg);
   -moz-transform: rotate(-18deg);
@@ -1892,7 +1893,7 @@ code {
   -o-transform: rotate(-18deg);
   transform: rotate(-18deg);
 }
-/* line 95, ../sass/partials/_slide-06.scss */
+/* line 94, ../sass/partials/_slide-06.scss */
 #slide-06 #child-02 {
   -webkit-transform: rotate(18deg);
   -moz-transform: rotate(18deg);
@@ -1900,7 +1901,7 @@ code {
   -o-transform: rotate(18deg);
   transform: rotate(18deg);
 }
-/* line 96, ../sass/partials/_slide-06.scss */
+/* line 95, ../sass/partials/_slide-06.scss */
 #slide-06 #child-03 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);

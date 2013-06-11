@@ -1,9 +1,9 @@
-$slide-07-planet-radius: 150px;
-$slide-07-moon-radius: 30px;
+$s07-planet-radius: 150px;
+$s07-moon-radius: 30px;
 
 @include keyframes(moon-orbit) {
-  0% { @include transform(rotateZ(0deg) translateX($slide-07-planet-radius) ); }
-  100% { @include transform(rotateZ(360deg) translateX($slide-07-planet-radius) ); }
+  0% { @include transform(rotateZ(0deg) translateX($s07-planet-radius) ); }
+  100% { @include transform(rotateZ(360deg) translateX($s07-planet-radius) ); }
 }
 
 #slide-07 {
@@ -13,20 +13,20 @@ $slide-07-moon-radius: 30px;
     height: 100%;
 
     .planet {
-      @include circle($slide-07-planet-radius);
+      @include circle($s07-planet-radius);
 
       background: $third-color;
       border: 10px solid lighten($third-color, 20%);
     }
 
     .orbit {
-      @include circle(2 * $slide-07-planet-radius);
+      @include circle(2 * $s07-planet-radius);
 
       border: 2px solid white;
     }
 
     .moon {
-      @include circle($slide-07-moon-radius);
+      @include circle($s07-moon-radius);
       @include animation(moon-orbit 3s linear infinite);
 
       background: $second-color;

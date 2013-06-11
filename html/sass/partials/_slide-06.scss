@@ -2,10 +2,8 @@ $square-width: 50px;
 $packet-width: 14px;
 $path-width: 6px;
 
-$slide-06-dark-shade: darken($fourth-color, 10%);
-$slide-06-darker-shade: darken($fourth-color, 20%);
-
-$slide-06-second-row: 55%;
+$s06-dark-shade: darken($fourth-color, 10%);
+$s06-darker-shade: darken($fourth-color, 20%);
 
 @include keyframes(packet) {
   0% { top: 0%; }
@@ -24,11 +22,11 @@ $slide-06-second-row: 55%;
     margin-left: -0.5 * $square-width;
 
     border-radius: 2 * $path-width;
-    border: $path-width solid $slide-06-darker-shade;
+    border: $path-width solid $s06-darker-shade;
   }
 
   .parent {
-    background: $slide-06-dark-shade;
+    background: $s06-dark-shade;
     top: 20%;
     left: 50%;
   }
@@ -45,14 +43,15 @@ $slide-06-second-row: 55%;
     margin-left: -0.5 * $path-width;
     @include transform-origin(0.5 * $path-width, 0);
 
-    background: $slide-06-darker-shade;
+    background: $s06-darker-shade;
     @include default-box-shadow();
 
 
     .packet {
       @include circle($packet-width);
+      top: 0%;
 
-      border: 0.5 * $path-width solid $slide-06-darker-shade;
+      border: 0.5 * $path-width solid $s06-darker-shade;
       background: $packet-color;
     }
   }
