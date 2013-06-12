@@ -2035,12 +2035,12 @@ code {
   margin-top: -15px;
   margin-left: -15px;
   border-radius: 50%;
-  -webkit-animation: moon-orbit 3s linear infinite;
-  -khtml-animation: moon-orbit 3s linear infinite;
-  -moz-animation: moon-orbit 3s linear infinite;
-  -ms-animation: moon-orbit 3s linear infinite;
-  -o-animation: moon-orbit 3s linear infinite;
-  animation: moon-orbit 3s linear infinite;
+  -webkit-animation: moon-orbit 3s linear infinite reverse;
+  -khtml-animation: moon-orbit 3s linear infinite reverse;
+  -moz-animation: moon-orbit 3s linear infinite reverse;
+  -ms-animation: moon-orbit 3s linear infinite reverse;
+  -o-animation: moon-orbit 3s linear infinite reverse;
+  animation: moon-orbit 3s linear infinite reverse;
   background: #ffc1b3;
   border: 3px solid white;
 }

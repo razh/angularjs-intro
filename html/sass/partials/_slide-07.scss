@@ -27,7 +27,7 @@ $s07-moon-radius: 30px;
 
     .moon {
       @include circle($s07-moon-radius);
-      @include animation(moon-orbit 3s linear infinite);
+      @include animation(moon-orbit 3s linear infinite reverse);
 
       background: $second-color;
       border: 3px solid lighten($second-color, 20%);
